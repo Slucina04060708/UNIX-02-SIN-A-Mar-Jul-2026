@@ -26,4 +26,12 @@ web of trust #sistema distribuido, no cnetralizado en una compañia, yo decido a
 # 4 Confio totalmente (full)
 # 5 Confio Absolutamente (propias claves)
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt # Crea una firma digital en texto claro sobre doc_no_cifrado.txt, permitiendo que el contenido sea legible pero garantizando su autenticidad e integridad en el archivo de salida.
+
 (clearsign)
+
+cat doc_no_cifrado_firmado.txt #muestra en la pantalla todo el contenido del archivo que acabo de firmar.
+# # Superusuario
+# $ ussario generña
+gpg --verify PAULA_doc_no_cifrado_firmado.txt #Comprueba que el contenido del archivo no ha sido alterado y que la firma es auténtica.
+gpg --edit-key XXXXX #
+
