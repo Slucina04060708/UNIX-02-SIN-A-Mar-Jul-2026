@@ -31,7 +31,8 @@ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt # Crea un
 
 cat doc_no_cifrado_firmado.txt #muestra en la pantalla todo el contenido del archivo que acabo de firmar.
 # # Superusuario
-# $ ussario generña
+# $ usuario general
+
 gpg --verify PAULA_doc_no_cifrado_firmado.txt #Comprueba que el contenido del archivo no ha sido alterado y que la firma es auténtica.
-gpg --edit-key XXXXX #
+
 
