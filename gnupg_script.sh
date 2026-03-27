@@ -42,3 +42,4 @@ gpg --output firma_separada_doc_no_cifrado-sig --detach-sign doc_no_cifrado.txt 
 gpg --verify PAULA_firma_separada_doc_no_cifrado.sig PAULA_doc_no_cifrado.txt #Compara el archivo de la firma separada con el documento original para confirmar que el texto no ha sido modificado y que Paula realmente lo firmó.
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient XXXXXX doc_no_cifrado.txt #Cifra y firma simultáneamente el archivo doc_no_cifrado.txt para que solo el destinatario pueda leerlo y confirme la identidad del autor original.
 gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt PAULA_doc_cifrado_y_firmado.txt #Descifra el contenido y verifica la firma de Paula simultáneamente, guardando el mensaje original limpio en el nuevo archivo de texto.
+cat doc_cifrado_y_firmado_descifrado_y_validado.txt #Muestra en pantalla el contenido final del mensaje ya descifrado y verificado para confirmar que el texto es legible y correcto.
