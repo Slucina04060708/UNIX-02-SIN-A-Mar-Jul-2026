@@ -17,3 +17,8 @@ sudo mv saludobin /bin/ # Mueve el contenido de saludobin al archivo /bin/
 inodo #identificado unico
 #El nombre del archivo no se guarda en el inodo sino en el directorio que lo contiene 
 pwd #((Print Working Directory) en Linux muestra la ruta absoluta del directorio actual en la terminal
+ls -F # Lista el contenido del directorio añadiendo un carácter indicador al final de cada nombre para identificar su tipo
+/ #directorio
+* #archivo
+@ #enlace simbólico
+cd / #Cambia el directorio actual al directorio raíz (Root), que es el nivel más alto de la jerarquía del sistema de archivos en Linux/Unix.
