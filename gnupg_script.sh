@@ -40,3 +40,4 @@ gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #Gener
 gpg --verify PAULA_doc_no_cifrado_firmado_binario.txt #Comprueba la integridad y autoría del archivo binario para confirmar que el contenido no fue alterado y que la firma es auténtica.
 gpg --output firma_separada_doc_no_cifrado-sig --detach-sign doc_no_cifrado.txt #Crea un archivo de firma digital independiente que contiene solo la firma de doc_no_cifrado.txt, dejando el mensaje original sin cambios y por separado.
 gpg --verify PAULA_firma_separada_doc_no_cifrado.sig PAULA_doc_no_cifrado.txt #Compara el archivo de la firma separada con el documento original para confirmar que el texto no ha sido modificado y que Paula realmente lo firmó.
+gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient XXXXXX doc_no_cifrado.txt #Cifra y firma simultáneamente el archivo doc_no_cifrado.txt para que solo el destinatario pueda leerlo y confirme la identidad del autor original.
