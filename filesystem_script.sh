@@ -23,3 +23,9 @@ ls -F # Lista el contenido del directorio añadiendo un carácter indicador al f
 @ #enlace simbólico
 cd / #Cambia el directorio actual al directorio raíz (Root), que es el nivel más alto de la jerarquía del sistema de archivos en Linux/Unix.
 ls -i #Muestra los inodos
+Hard link #Crea un segundo nombre para el mismo inodo
+# Si borras el nombre original el archivo sigue existiendo siempre y cuando permanezca un hard link
+Soft link #Es un puntero (como acceso directo en windows) al nombre de otro archivo
+#Si borrs el original, el enlace simbólico se rompe.
+bin #Comandos como usuario general
+sbin #Comandos como administrador
