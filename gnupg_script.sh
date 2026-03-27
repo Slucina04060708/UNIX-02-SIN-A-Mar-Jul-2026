@@ -23,7 +23,10 @@ web of trust #sistema distribuido, no cnetralizado en una compañia, yo decido a
 # 1 Prefiero no decirlo
 # 2 No tengo confianza
 # 3 Confio un poco (marginal)
-# 4 Confio totalmente (full)
+# 4 Confio totalmente (full) 
+# Web of Trust: Se asigna nivel de confianza 4 (Full Trust) a la llave de Paula.
+# Se elige este nivel porque se ha verificado personalmente su identidad y la 
+# autenticidad de su huella digital (fingerprint) durante la sesión de laboratorio.
 # 5 Confio Absolutamente (propias claves)
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt # Crea una firma digital en texto claro sobre doc_no_cifrado.txt, permitiendo que el contenido sea legible pero garantizando su autenticidad e integridad en el archivo de salida.
 
