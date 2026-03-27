@@ -22,3 +22,4 @@ ls -F # Lista el contenido del directorio añadiendo un carácter indicador al f
 * #archivo
 @ #enlace simbólico
 cd / #Cambia el directorio actual al directorio raíz (Root), que es el nivel más alto de la jerarquía del sistema de archivos en Linux/Unix.
+ls -i #Muestra los inodos
