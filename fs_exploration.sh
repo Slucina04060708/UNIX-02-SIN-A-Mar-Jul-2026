@@ -28,3 +28,15 @@ sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n"
 #lsblk -f
 #lsblk: List Block Devices. It displays a tree-like structure of your disks.
 #-f (filesystems): Adds specific info about filesystems. It shows what each partition is formatted as (ext4, fat32, ntfs), its UUID (unique ID), and where it is currently mounted in the system.
+# Run the partition editor to list all disk layouts with admin rights, print a visual separator, and then display a tree view of all block devices including their filesystem types, UUIDs, and mount points.
+
+[-d/sys/firmware/efi] && echo "UEFI" || echo "BIOS"
+# [ = starts a test (conditional).
+# -d = checks if it is a directory.
+# /sys/firmware/efi = Path to the system's EFI folder.
+# ] = Close the test
+#&& (Logical AND) = If the previous test is true (the directory exists), it executes the next command.
+#echo "UEFI" = Prints "UEFI" to the terminal if the test passed.
+#|| (Logical OR) = If the previous test was false (the directory does not exist), it executes the final command instead.
+#echo "BIOS" = Prints "BIOS" to the terminal as a fallback.
+# Check if the EFI firmware directory exists; if it does, print 'UEFI', otherwise print 'BIOS'
