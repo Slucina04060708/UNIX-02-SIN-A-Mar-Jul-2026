@@ -19,7 +19,7 @@ inodo #identificador unico
 pwd #((Print Working Directory) en Linux muestra la ruta absoluta del directorio actual en la terminal
 ls -F # Lista el contenido del directorio añadiendo un carácter indicador al final de cada nombre para identificar su tipo
 / #directorio
-* #archivo
+* #archivo ejecutable
 @ #enlace simbólico
 cd / #Cambia el directorio actual al directorio raíz (Root), que es el nivel más alto de la jerarquía del sistema de archivos en Linux/Unix.
 ls -i #Muestra los inodos
