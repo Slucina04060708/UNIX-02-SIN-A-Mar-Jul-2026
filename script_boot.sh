@@ -16,3 +16,15 @@ cd /bin #Access the system's binary directory to interact with essential executa
 ls -a #List all files and directories, including those that are hidden (starting with a dot).
 . #Reference the current working directory, often used when executing local scripts or specifying paths.
 .. #Reference the immediate parent directory to move up one level in the file system hierarchy.
+1572971 drwxrwxrwx+ 2 codespace codespace 4096 Apr  9 12:19 .
+1572874 drwxrwxrwx+ 5 codespace root      4096 Apr  9 12:19 ..
+
+#1572971 / 1572874 (Inode): The unique index number assigned to the file/directory in the file system.
+#drwxrwxrwx+ (Permissions): * d: Directory.
+    #rwx: Read, write, and execute permissions for the Owner, Group, and Others.
+    #+: Indicates an Access Control List (ACL) is attached (extra permissions).
+#2 / 5 (Hard Links): The number of hard links pointing to this node.
+#codespace (Owner): The user who owns the directory.
+#codespace / root (Group): The group that has specific permissions for this directory.
+#4096 (Size): The size of the directory metadata in bytes.
+#Apr 9 12:19 (Timestamp): The date and time of the last modification.
