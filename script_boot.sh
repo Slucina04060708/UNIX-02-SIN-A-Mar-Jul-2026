@@ -34,3 +34,10 @@ Device
     #7 (Major Number): This identifies the driver associated with the device. In Linux, different classes of hardware (like RAM disks, SCSI disks, or loop devices) are assigned specific major numbers. For example, "7" often represents a Loop Device, which is common in containerized environments like GitHub Codespaces.
     #4 (Minor Number): This identifies the specific instance or partition controlled by that driver. If you had multiple virtual disks, they would have the same major number but different minor numbers (7,1; 7,2; etc.).
 
+pwd #Output the absolute path of the current working directory to the terminal.
+whoami #Display the username of the current user logged into the shell session.
+ls -lt #List files in long format, sorted by modification time (newest first).
+ls -lh #List files in long format with human-readable sizes (e.g., KB, MB, GB).
+ls -lb #List files and print C-style escapes for non-graphic characters in filenames.
+ls /etc | head -20 #List the first 20 entries of the system configuration directory.
+ls /dev | head -20 #List the first 20 device files representing hardware or virtual components.
