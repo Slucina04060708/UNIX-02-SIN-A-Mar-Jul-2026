@@ -28,3 +28,9 @@ ls -a #List all files and directories, including those that are hidden (starting
 #codespace / root (Group): The group that has specific permissions for this directory.
 #4096 (Size): The size of the directory metadata in bytes.
 #Apr 9 12:19 (Timestamp): The date and time of the last modification.
+
+stat . #Display comprehensive file system status and timestamps for the current directory.
+Device
+    #7 (Major Number): This identifies the driver associated with the device. In Linux, different classes of hardware (like RAM disks, SCSI disks, or loop devices) are assigned specific major numbers. For example, "7" often represents a Loop Device, which is common in containerized environments like GitHub Codespaces.
+    #4 (Minor Number): This identifies the specific instance or partition controlled by that driver. If you had multiple virtual disks, they would have the same major number but different minor numbers (7,1; 7,2; etc.).
+
