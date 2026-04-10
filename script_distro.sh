@@ -7,3 +7,6 @@ make menuconfig #Launch the terminal-based configuration menu to customize kerne
 make -j 2 #Execute the build process using 2 parallel jobs to speed up compilation on multi-core systems.
 sudo mkdir /boot-files/initramfs #Create a dedicated staging directory to house the initial RAM filesystem components.
 sudo make CONFIG_PREFIX=/boot-files/initramfs install #Install the compiled binaries and scripts into the specified prefix directory to organize the boot structure.
+sudo mkdir /boot-files #Create a system directory to store bootable images and kernel binaries.
+sudo cp arch/x86/boot/bzImage /boot-files/ #Copy the compressed kernel boot image (bzImage) to the centralized boot-files directory.
+cd .. #Step out of the kernel source directory to return to the parent workspace.
