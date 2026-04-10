@@ -5,3 +5,5 @@ git clone --depth 1 https://github.com/torvalds/linux.git #Perform a shallow clo
 cd linux #Enter the root directory of the cloned Linux kernel source code.
 make menuconfig #Launch the terminal-based configuration menu to customize kernel features and modules before compilation.
 make -j 2 #Execute the build process using 2 parallel jobs to speed up compilation on multi-core systems.
+sudo mkdir /boot-files/initramfs #Create a dedicated staging directory to house the initial RAM filesystem components.
+sudo make CONFIG_PREFIX=/boot-files/initramfs install #Install the compiled binaries and scripts into the specified prefix directory to organize the boot structure.
