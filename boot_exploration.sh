@@ -16,3 +16,17 @@ ls --all
 ls -l -a -h 
 ls -lah 
 # Both represent the same: long format, all files, and human-readable sizes
+# mkdir (Make Directory) = Creates one or more new folders.
+# rmdir (Remove Directory) = Deletes empty folders.
+
+# Double Dash (--) = Forces the following text to be treated as a literal argument (plain text) 
+# rather than a command option (flag).
+
+# Create a directory named "-rf"
+mkdir -- -rf 
+# The double dash prevents "-rf" from being detected as a command flag.
+
+# Remove a directory named "-rf"
+rmdir -- -rf 
+# This ensures "-rf" is treated as the folder name to be deleted.
+
