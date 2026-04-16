@@ -29,4 +29,23 @@ mkdir -- -rf
 # Remove a directory named "-rf"
 rmdir -- -rf 
 # This ensures "-rf" is treated as the folder name to be deleted.
+# General Syntax: command [options] [arguments]
 
+# ls --help = Displays a brief summary of options and usage for the ls command.
+# man (Manual) = Opens the full reference manual for a command (e.g., ls, git).
+man ls 
+man git
+
+# Navigation within 'man' pages:
+# Use '/' followed by the word to search.
+# Press 'n' to go forward (next match).
+# Press 'N' to go backward (previous match).
+# Press 'q' to quit the manual.
+
+# man git-clone = Opens the specific manual for the git clone command.
+man git-clone
+
+--depth #Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
+# --depth <number> = Creates a "shallow clone". 
+# It truncates the history to a specific number of commits to save space and time.
+# Example: git clone --depth 1 [url]
