@@ -49,3 +49,38 @@ man git-clone
 # --depth <number> = Creates a "shallow clone". 
 # It truncates the history to a specific number of commits to save space and time.
 # Example: git clone --depth 1 [url]
+
+# File System Identities:
+# u (user) = The owner of the file.
+# g (group) = Users who are members of the file's group.
+# o (others) = Everyone else on the system.
+# a (all) = Includes user, group, and others.
+
+# The 3 Basic Permissions:
+# r (read) = Permission to view the file content or list a directory.
+# w (write) = Permission to modify the file or directory.
+# x (execute) = Permission to run the file as a program or enter a directory.
+
+# Identifying File Types (First character in 'ls -l'):
+# - = Regular file.
+# d = Directory (folder).
+# l = Symbolic link (shortcut).
+
+# Example Breakdown: - rwx r-x r--
+# [Type][User][Group][Others]
+
+# chmod (Change Mode) Structure:
+# chmod [who] [operator] [permission] [file]
+
+# Operators:
+# + = Add permission.
+# - = Remove permission.
+# = = Set exact permissions (removes others not specified).
+
+# touch = Command used to create an empty file.
+
+# Practical Examples:
+chmod +x script.sh          # Gives execute permission to everyone (a+x).
+chmod u+x script.sh         # Gives execute permission ONLY to the owner.
+chmod o-r secret.txt        # Removes read permission from 'others'.
+chmod u+rw,go-rwx private   # Owner gets read/write; Group and Others get nothing.
