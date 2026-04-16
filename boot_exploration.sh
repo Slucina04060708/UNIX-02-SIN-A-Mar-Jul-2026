@@ -84,3 +84,23 @@ chmod +x script.sh          # Gives execute permission to everyone (a+x).
 chmod u+x script.sh         # Gives execute permission ONLY to the owner.
 chmod o-r secret.txt        # Removes read permission from 'others'.
 chmod u+rw,go-rwx private   # Owner gets read/write; Group and Others get nothing.
+
+# sudo (SuperUser DO) = Runs a command with administrative (root) privileges.
+# Example: sudo chmod +x init
+
+# The 'sudo echo' Issue:
+sudo echo "hello" > /etc/protected_file
+# THIS FAILS because the redirection (>) is handled by the shell, not by sudo. 
+# The shell (as a normal user) doesn't have permission to write to /etc/.
+
+# tee (The T-pipe) = A command that reads from standard input (stdin) 
+# and writes to two places simultaneously:
+  # 1. A file (or multiple files).
+  # 2. Standard output (the terminal).
+
+# The 'tee' Solution for Protected Files:
+echo "hello" | sudo tee /etc/protected_file > /dev/null
+# 1. 'echo' provides the text.
+# 2. '|' (pipe) sends it to 'tee'.
+# 3. 'sudo tee' has root power to write into the protected file.
+# 4. '> /dev/null' hides the output so it doesn't clutter the terminal.
