@@ -120,3 +120,17 @@ sudo sh -c 'echo "chao" >> /etc/protected_file'
 # Key Difference:
 # '>' overwrites the file.
 # '>>' appends to the end of the file.
+
+# Double Quotes (") = Weak quotes. 
+# They allow "Variable Expansion" (the shell replaces the variable with its value).
+echo "$HOME" 
+# Output: /home/santiago (It shows the actual path)
+
+# Single Quotes (') = Strong quotes.
+# They treat everything as literal text. No expansion happens.
+echo '$HOME' 
+# Output: $HOME (It shows the exact characters)
+
+# Key Rule:
+# Use "" when you need to use variables or special characters.
+# Use '' when you want to protect the text and ensure it doesn't change.
