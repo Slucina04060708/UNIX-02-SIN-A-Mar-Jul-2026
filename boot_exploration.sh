@@ -104,3 +104,19 @@ echo "hello" | sudo tee /etc/protected_file > /dev/null
 # 2. '|' (pipe) sends it to 'tee'.
 # 3. 'sudo tee' has root power to write into the protected file.
 # 4. '> /dev/null' hides the output so it doesn't clutter the terminal.
+
+# sudo command: Executes a single command as root (standard use).
+# sudo sh -c 'command': Executes a full block or string as root. 
+# Useful for redirections (like >>) that standard sudo cannot handle alone.
+sudo sh -c 'echo "chao" >> /etc/protected_file'
+
+# sudo bash -c 'command': Similar to sh -c but more powerful; preferred for complex scripts.
+# sudo -i: Starts a complete root session with the root user's environment.
+# (This is the best option for temporary administrative work).
+
+# sudo su: Switches to the root user (less clean; might be unstable in different shells).
+# sudo su -: Similar to a full root login (acceptable but sudo -i is modern).
+
+# Key Difference:
+# '>' overwrites the file.
+# '>>' appends to the end of the file.
