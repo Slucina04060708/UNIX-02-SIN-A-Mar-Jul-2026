@@ -158,3 +158,25 @@ ls -l hola.sh
 # Running the script:
 ./hola.sh
 # The './' tells the shell to look for the file in the current directory.
+
+ls /etc 
+# DOES NOT NEED SUDO.
+# Why? The /etc directory usually has "read" (r) permissions for everyone. 
+# I can see what's inside, but I can't change anything.
+
+touch /etc/prueba.txt 
+# NEEDS SUDO.
+# Why? I'am trying to create a file in a system configuration directory. 
+# Normal users do not have "write" (w) permissions in /etc.
+# Correct usage: sudo touch /etc/prueba.txt
+
+mkdir ~/mi_carpeta 
+# DOES NOT NEED SUDO.
+# Why? The symbol '~' represents my HOME directory. 
+# I'am the owner of my home, so I have full permissions to create folders there.
+
+apt install cowsay 
+# NEEDS SUDO.
+# Why? Installing software modifies system files and directories (like /usr/bin). 
+# Only the administrator (root) can manage packages and system-wide software.
+# Correct usage: sudo apt install cowsay
