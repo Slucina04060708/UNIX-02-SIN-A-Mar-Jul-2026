@@ -180,3 +180,25 @@ apt install cowsay
 # Why? Installing software modifies system files and directories (like /usr/bin). 
 # Only the administrator (root) can manage packages and system-wide software.
 # Correct usage: sudo apt install cowsay
+
+# Octal Values (Numeric System):
+# r (read)    = 4 (Four letters)
+# w (write)   = 2 (Double-v / looks like a 2)
+# x (execute) = 1 (It is the first step/start)
+# - (none)    = 0 (No permissions)
+
+# Common Combinations:
+# 7 (4+2+1) = rwx (Full permissions)
+# 6 (4+2+0) = rw- (Read and write, no execution)
+# 5 (4+0+1) = r-x (Read and execute, no modification)
+# 4 (4+0+0) = r-- (Read only)
+# 0 (0+0+0) = --- (No permissions at all)
+
+# How to use it with chmod:
+# chmod [user][group][others] file
+
+# Practical Examples:
+chmod 777 file.sh   # Everyone can do everything (dangerous!)
+chmod 755 script.sh # Owner: all; Group/Others: read and execute
+chmod 644 document  # Owner: read/write; Group/Others: read only
+chmod 600 private   # Only the owner can read/write; others see nothing
