@@ -202,3 +202,22 @@ chmod 777 file.sh   # Everyone can do everything (dangerous!)
 chmod 755 script.sh # Owner: all; Group/Others: read and execute
 chmod 644 document  # Owner: read/write; Group/Others: read only
 chmod 600 private   # Only the owner can read/write; others see nothing
+
+# Step 1: Create a dummy file
+touch prueba.txt
+
+# Step 2: Set restrictive permissions (600)
+# 6 (4+2) = rw- for the user
+# 0 (0)   = --- for the group
+# 0 (0)   = --- for others
+chmod 600 prueba.txt
+ls -l prueba.txt
+# Output should look like: -rw-------
+
+# Step 3: Set public/executable permissions (755)
+# 7 (4+2+1) = rwx for the user
+# 5 (4+1)   = r-x for the group
+# 5 (4+1)   = r-x for others
+chmod 755 prueba.txt
+ls -l prueba.txt
+# Output should look like: -rwxr-xr-x
