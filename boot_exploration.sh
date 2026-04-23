@@ -134,3 +134,27 @@ echo '$HOME'
 # Key Rule:
 # Use "" when you need to use variables or special characters.
 # Use '' when you want to protect the text and ensure it doesn't change.
+
+# Creating a basic script:
+echo '#!/bin/sh' > hola.sh
+# Uses '>' to create the file and add the "Shebang" (defines the interpreter).
+
+echo 'echo "Hola desde mi primer script"' >> hola.sh
+# Uses '>>' to append the actual command to the file.
+
+# cat (Concatenate) = Displays the content of the file in the terminal.
+cat hola.sh
+
+# Checking and changing permissions:
+ls -l hola.sh
+# Shows the current permissions (usually no 'x' at the start).
+
+chmod +x hola.sh
+# Grants execution permissions to the script.
+
+ls -l hola.sh
+# Verify that the 'x' is now present.
+
+# Running the script:
+./hola.sh
+# The './' tells the shell to look for the file in the current directory.
