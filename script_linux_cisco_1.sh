@@ -108,3 +108,29 @@ ls -lS /var/log
 # -r (reverse): Inverts any sorting order.
 ls -lSr /var/log  # Sorts by size, from smallest to largest.
 ls -r /var/log    # Sorts alphabetically in reverse (Z to A).
+
+#BLOCK 5
+# --- su (Switch User) ---
+# Used to start a new shell session as a different user.
+# By default, it tries to switch to 'root'.
+
+# Options for a "Login Shell" (Cleans the environment and loads user settings):
+su -l
+su -
+su --login
+# All three perform a full login, changing the directory to the target user's HOME.
+
+# --- sudo (SuperUser DO) ---
+# Used to execute a single command with administrative privileges.
+sudo [OPTIONS] COMMAND
+
+# Example: Installing or running restricted tools
+sudo apt update
+sudo apt install sl
+sudo sl  # Runs the 'Steam Locomotive' animation as root
+
+# --- Advanced sudo Usage ---
+# You can use sudo to act as ANY user, not just root.
+# Use the -u (user) option to specify the target account.
+sudo -u sysadmin ls /home/sysadmin
+# This runs 'ls' as the user 'sysadmin' instead of root.
