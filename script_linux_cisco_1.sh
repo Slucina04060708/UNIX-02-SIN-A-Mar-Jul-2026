@@ -19,3 +19,18 @@ ls -l -r
 ls -rl
 ls -lr
 # All three commands do exactly the same: a detailed list in reverse order.
+
+# In order to execute the 'aptitude' commands from the course, 
+# the package must be installed first.
+
+# Update the package list
+sudo apt update
+
+# Install aptitude (using -y to automatically say "yes" to prompts)
+sudo apt install aptitude -y
+
+# Exploring the "moo" Easter Egg:
+# aptitude moo        -> The program denies there is an Easter Egg.
+# aptitude -v moo     -> '-v' (verbose) Increases the detail of the response.
+# aptitude -vv moo    -> The program asks you to stop.
+# aptitude -vvv moo   -> The program gets annoyed.
