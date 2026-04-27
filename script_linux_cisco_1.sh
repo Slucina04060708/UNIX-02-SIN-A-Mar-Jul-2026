@@ -336,3 +336,45 @@ ls
 # --- SECURITY TIPS ---
 # 1. Standard Permissions: Usually, you always have full permissions (rwx) in your Home directory (represented by ~).
 # 2. The /tmp folder: This is a global temporary directory where users typically have write access to perform quick operations.
+
+#BLOCK 11
+# dd (Data Duplicator): Used to copy files or entire partitions at the bit level.
+# Syntax: dd if=[INPUT_FILE] of=[OUTPUT_FILE] [OPTIONS]
+
+# --- KEY FEATURES ---
+# 1. Cloning/Wiping: Can duplicate or erase entire disks/partitions.
+# 2. Raw Data Transfer: Copy data to USB drives or CD-ROMs.
+# 3. MBR Backups: Backup and restore the Master Boot Record.
+# 4. Swap Files: Create files of a specific size filled with binary zeros.
+
+# --- COMMAND ARGUMENTS ---
+# if (Input File): The source file to be read.
+# of (Output File): The destination file to be written.
+# bs (Block Size): The size of each data block (use K, M, G, T).
+# count: The number of blocks to read from the input.
+
+# --- PRACTICAL EXERCISE: Creating a 50MB file ---
+
+# 1. Return to home directory:
+cd ~
+
+# 2. Create a file filled with zeros:
+dd if=/dev/zero of=/tmp/swapex bs=1M count=50
+
+# Breakdown:
+# if=/dev/zero -> Source of infinite binary zeros.
+# of=/tmp/swapex -> The destination file path.
+# bs=1M -> Each block is 1 Megabyte.
+# count=50 -> Create 50 blocks (Total = 50MB).
+
+# --- PERMISSION REQUIREMENTS TABLE ---
+
+| Location / Action     | Required Permission | Why?                                               |
+|:----------------------|:--------------------|:---------------------------------------------------|
+| Input File (if)       | Read (r)            | To access and read the source data bits.           |
+| Output File (of)      | Write (w)           | To write the bitstream to the destination path.    |
+| Physical Devices      | Root (sudo)         | Standard users cannot write directly to raw disks. |
+
+# --- SECURITY TIPS ---
+# 1. Disk Cloning: When cloning entire disks (e.g., dd if=/dev/sda of=/dev/sdb), you don't usually need 'bs' or 'count'.
+# 2. The "Point of No Return": You MUST be 100% sure of the destination path. A single typo in the 'of' argument can overwrite your entire Operating System.
