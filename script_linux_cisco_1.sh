@@ -129,8 +129,62 @@ sudo apt update
 sudo apt install sl
 sudo sl  # Runs the 'Steam Locomotive' animation as root
 
+# Troubleshooting 'sl' command:
+# If 'sudo sl' returns 'command not found', it's likely because the executable 
+# is located in /usr/games/, which might not be in root's PATH.
+
+# Best practice: Run it as a normal user.
+sl
+
+# Full path execution (if standard command fails):
+sudo apt update && sudo apt install sl -y
+/usr/games/sl
+
 # --- Advanced sudo Usage ---
 # You can use sudo to act as ANY user, not just root.
 # Use the -u (user) option to specify the target account.
 sudo -u sysadmin ls /home/sysadmin
 # This runs 'ls' as the user 'sysadmin' instead of root.
+
+#BLOCK 6
+# First, navigate to the Documents directory
+cd ~/Documents
+
+# List the specific file to check its properties
+ls -l hello.sh
+
+# Output Breakdown:
+# -rw-r--r-- 1 codespace codespace 0 Apr 27 06:10 hello.sh
+# ^            Owner     Group
+# |
+# File Type and Permissions
+
+# --- Permission Structure ---
+# Example: - rw- r-- r--
+# [Type] [User] [Group] [Others]
+
+# 1. File Type:
+# - = Regular file
+# d = Directory
+
+# 2. Permission Groups:
+# User (u): Permissions for the owner of the file.
+# Group (g): Permissions for members of the file's group.
+# Others (o): Permissions for everyone else.
+
+# --- Permission Types and Effects ---
+
+| Permission | Effect on Files | Effect on Directories |
+| **Read (r)** | View or copy file content. | List files (needs 'x' for details). |
+| **Write (w)** | Modify or overwrite content. | Add or delete files (needs 'x'). |
+| **Execute (x)** | Run the file as a program. | Move into the directory (cd). |
+
+# --- CRITICAL RULE: THE PRIORITY CHAIN ---
+# Linux checks permissions in this order: User -> Group -> Others.
+# Once a match is found, IT STOPS.
+
+# Example Scenario:
+# -r-- rw- rwx  1 sysadmin staff  test_file
+# 1. Is the current user 'sysadmin'? YES.
+# 2. Result: The user ONLY has 'r--' (Read only).
+# 3. Even if sysadmin is in 'staff', they CANNOT write, because the chain stopped at the User level.
