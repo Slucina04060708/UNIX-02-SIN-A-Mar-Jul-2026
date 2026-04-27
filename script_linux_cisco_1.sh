@@ -237,3 +237,35 @@ ls -l hello.sh
 # 5. Execute the script:
 ./hello.sh
 # I can confirm the permission change was successful because the "permission denied" message no longer appears when attempting to execute ./hello.sh.
+
+#BLOCK 8
+# chown (Change Owner): Used to change the user or group owner of a file.
+# Changing the USER owner REQUIRES administrative privileges (sudo).
+
+# Syntax: sudo chown [OWNER] FILE
+
+# --- PRACTICAL EXERCISE: Changing owner to root ---
+
+# 1. Verify current owner:
+ls -l hello.sh
+# Result: -rwxr--r-- 1 sysadmin sysadmin ... (Owner is sysadmin)
+
+# 2. Change the owner to root (requires sudo):
+sudo chown root hello.sh
+# Note: Use password 'netlab123' if prompted.
+
+# 3. Verify the change:
+ls -l hello.sh
+# Result: -rwxr--r-- 1 root sysadmin ... (Owner is now root)
+
+# --- THE CONSEQUENCE ---
+# If I try to run it as a normal user:
+./hello.sh
+# Result: -bash: ./hello.sh: Permission denied
+
+# WHY? 
+# Because the 'x' (execution) bit only belongs to the OWNER (now root).
+# Since 'codespace' is no longer the owner, they are treated as part of the 'group' or 'others', which only have 'r--' (read-only) permissions.
+
+# SOLUTION: Execute as the new owner using sudo:
+sudo ./hello.sh
