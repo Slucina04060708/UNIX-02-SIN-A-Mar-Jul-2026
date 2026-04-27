@@ -269,3 +269,34 @@ ls -l hello.sh
 
 # SOLUTION: Execute as the new owner using sudo:
 sudo ./hello.sh
+
+#BLOCK 9
+# --- cat (Concatenate) ---
+# Used to quickly display the entire content of a file.
+# Recommended for SMALL files only.
+cat [OPTIONS] [FILE]
+
+# Example:
+cat animals.txt
+
+# --- Paging Commands (For Large Files) ---
+# more: Displays content page by page (older).
+# less: Displays content with better navigation and search (modern).
+
+# --- head and tail (Previewing Files) ---
+# Useful for checking the beginning or end of logs and scripts.
+
+# head: Shows the first 10 lines by default.
+head alpha.txt
+
+# tail: Shows the last 10 lines by default.
+tail alpha.txt
+
+# --- Specifying the Number of Lines (-n) ---
+# Syntax: command -n [number_of_lines] [file]
+
+# To see only the first 5 lines:
+head -n 5 alpha.txt
+
+# To see only the last 5 lines:
+tail -n 5 alpha.txt
