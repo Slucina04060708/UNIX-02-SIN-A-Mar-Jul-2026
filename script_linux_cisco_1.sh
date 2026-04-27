@@ -67,3 +67,44 @@ cd ..
 
 # ~ (Tilde) = Represents the current user's HOME directory.
 cd ~
+
+#BLOCK 4
+# General Syntax: ls [OPTIONS] [FILE/DIRECTORY]
+# Example: ls -l /var/log/
+
+# --- FILE TYPES (First Character) ---
+# d = Directory (A file used to contain other files).
+# - = Regular file (Text, images, binaries, compressed files).
+# l = Symbolic link (Points to another file).
+# s = Socket (Used for inter-process communication).
+# p = Pipe (Used for inter-process communication).
+# b = Block device (Hardware communication like hard drives).
+# c = Character device (Hardware communication like terminals).
+
+# --- UNDERSTANDING THE OUTPUT COLUMNS ---
+# Example: -rw-r----- 1 syslog adm 1346 Oct 2 22:17 auth.log
+
+# 1. Permissions (-rw-r-----): Defines who can read, write, or execute.
+# 2. Hard link count (1): Number of hard links pointing to this file.
+# 3. Owner (syslog): The user who owns the file.
+# 4. Group (adm): The group that owns the file.
+# 5. Size (1346): File size in bytes (use -h for human-readable KB/MB).
+# 6. Timestamp (Oct 2 22:17): Date and time of the last modification.
+# 7. Name (auth.log): The name of the file or directory.
+
+# --- SYMBOLIC LINKS ---
+# For symbolic links, the output shows an arrow pointing to the original path.
+# lrwxrwxrwx 1 root root 22 Nov 6 2012 /etc/grub.conf -> ../boot/grub/grub.conf
+
+# --- SORTING OPTIONS ---
+# By default, 'ls' sorts alphabetically. You can change this behavior:
+
+# -t (time): Sorts by modification time (newest first).
+ls -lt /var/log
+
+# -S (size): Sorts by file size (largest first).
+ls -lS /var/log
+
+# -r (reverse): Inverts any sorting order.
+ls -lSr /var/log  # Sorts by size, from smallest to largest.
+ls -r /var/log    # Sorts alphabetically in reverse (Z to A).
