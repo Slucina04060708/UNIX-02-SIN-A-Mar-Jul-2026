@@ -174,10 +174,11 @@ ls -l hello.sh
 
 # --- Permission Types and Effects ---
 
-| Permission | Effect on Files | Effect on Directories |
-| **Read (r)** | View or copy file content. | List files (needs 'x' for details). |
-| **Write (w)** | Modify or overwrite content. | Add or delete files (needs 'x'). |
-| **Execute (x)** | Run the file as a program. | Move into the directory (cd). |
+| Permission   | Effect on Files              | Effect on Directories               |
+|:-------------|:-----------------------------|:------------------------------------|
+|   Read (r)   | View or copy file content.   | List files (needs 'x' for details). |
+|   Write (w)  | Modify or overwrite content. | Add or delete files (needs 'x').    |
+|   Execute (x)| Run the file as a program.   | Move into the directory (cd).       |
 
 # --- CRITICAL RULE: THE PRIORITY CHAIN ---
 # Linux checks permissions in this order: User -> Group -> Others.
@@ -300,3 +301,38 @@ head -n 5 alpha.txt
 
 # To see only the last 5 lines:
 tail -n 5 alpha.txt
+
+#BLOCK 10
+# cp (Copy): Creates a duplicate of a file or directory.
+# Syntax: cp [OPTIONS] SOURCE DESTINATION
+
+# --- USE CASES ---
+# 1. Backups: Revert to the original if changes fail.
+# 2. Transfers: Move files to removable media.
+# 3. Templates: Use an existing document as a starting point.
+
+# --- PRACTICAL EXERCISE: Copying a system file ---
+
+# 1. Navigate to your target folder:
+cd ~/Documents
+
+# 2. Copy the 'passwd' file from the system config to your current folder (.):
+cp /etc/passwd .
+
+# Note: The dot (.) represents your current location (Documents). 
+# This creates a file named 'passwd' in your directory.
+
+# 3. Verify the copy exists:
+ls
+
+# --- PERMISSION REQUIREMENTS TABLE ---
+
+| Location               | Required Permission    | Why?                                              |
+|:-----------------------|:-----------------------|:--------------------------------------------------|
+| Source Directory       | Execute (x)            | To enter the folder and "search" for the file.    |
+| Source File            | Read (r)               | To "see" and duplicate the content.               |
+| Destination Directory  | Write (w) & Execute (x)| To create the new file and enter the target folder|
+
+# --- SECURITY TIPS ---
+# 1. Standard Permissions: Usually, you always have full permissions (rwx) in your Home directory (represented by ~).
+# 2. The /tmp folder: This is a global temporary directory where users typically have write access to perform quick operations.
