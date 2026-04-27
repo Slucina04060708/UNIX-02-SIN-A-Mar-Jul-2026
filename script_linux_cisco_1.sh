@@ -188,3 +188,52 @@ ls -l hello.sh
 # 1. Is the current user 'sysadmin'? YES.
 # 2. Result: The user ONLY has 'r--' (Read only).
 # 3. Even if sysadmin is in 'staff', they CANNOT write, because the chain stopped at the User level.
+
+#BLOCK 7
+# chmod (Change Mode): Used to change file or directory permissions.
+# Only the owner or the root user can modify these modes.
+
+# --- WHY CHMOD? ---
+# In early UNIX, permissions were called "access modes". 
+# chmod = "Change Access Modes".
+
+# --- SYMBOLIC METHOD STRUCTURE ---
+# Syntax: chmod [WHO][ACTION][PERMISSION] file
+
+# 1. WHO (Sets of permissions):
+# u = User (owner)
+# g = Group
+# o = Others
+# a = All (u, g, and o combined)
+
+# 2. ACTION:
+# + = Add permission
+# - = Remove permission
+# = = Set exact permission (overwrites previous ones)
+
+# 3. PERMISSION:
+# r = read
+# w = write
+# x = execute
+
+# --- PRACTICAL EXERCISE: Running a script ---
+
+# 1. Navigate and check initial status:
+cd ~/Documents
+ls -l hello.sh
+# Result: -rw-r--r-- (No execution permission 'x')
+
+# 2. Try to run it:
+./hello.sh
+# Result: -bash: ./hello.sh: Permission denied
+
+# 3. Grant execution permission to the owner (u):
+chmod u+x hello.sh
+
+# 4. Verify the change:
+ls -l hello.sh
+# Result: -rwxr--r-- (Notice the 'x' for the owner)
+
+# 5. Execute the script:
+./hello.sh
+# I can confirm the permission change was successful because the "permission denied" message no longer appears when attempting to execute ./hello.sh.
