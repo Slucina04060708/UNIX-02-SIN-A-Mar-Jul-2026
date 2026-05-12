@@ -68,4 +68,27 @@ In Linux, every file and directory is owned by a specific USER and
 # - Confirmation: Running 'groups' again verifies the membership structure.
 
 #  4. Ownership Correlation:
-# - When a file is created (e.g., 'touch comun'), it is assigned to the primary group of the user who created it (e.g., 'alberto').
+# - When a file is created (e.g., 'touch comun'), it is assigned to the primary group of the user who created it (e.g., 'root').
+
+In Linux, every file and directory is owned by a specific USER and 
+#  associated with a specific GROUP. 
+#
+#  1. Command 'chown' (Change Owner):
+#     - Purpose: Changes the owner and optionally the group of a file.
+#     - Security Rule: Typically, only the 'root' user has the privilege to change the owner of any file.
+#
+#  2. Command 'chgrp' (Change Group):
+#     - Purpose: Changes the group associated with a file.
+#     - Security Rule: A regular user can only change the group to one 
+#       they belong to.
+#
+#  3. Recursive Action (-R):
+#     - Both commands accept the '-R' flag to apply changes to a folder 
+#       and all its contents simultaneously.
+#
+#  4. Practical Laboratory Cases:
+#     - Normal Creation: Files created by a user (e.g., 'root') 
+#       automatically belong to that user and their primary group.
+#     - Failed Operation: If a non-root user tries to 'chown' a file 
+#       to another user (e.g., 'luna'), the system returns:
+#       "chown: changing ownership of 'file': Operation not permitted"
