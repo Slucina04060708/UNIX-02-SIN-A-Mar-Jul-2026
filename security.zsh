@@ -92,3 +92,24 @@ In Linux, every file and directory is owned by a specific USER and
 #     - Failed Operation: If a non-root user tries to 'chown' a file 
 #       to another user (e.g., 'luna'), the system returns:
 #       "chown: changing ownership of 'file': Operation not permitted"
+
+#  Managing systems efficiently requires the ability to change multiple attributes at once and modify user group memberships dynamically.
+#
+#  1. Combined 'chown' Syntax:
+#     - Format: chown usuario:grupo fichero
+#     - Purpose: Updates both the Owner and the Group in a single command.
+#     - Example: sudo chown luna:grupo_test mi_archivo
+#
+#  2. Recursive Ownership (-R):
+#     - Purpose: Applies ownership changes to a directory and every single 
+#       file or subdirectory contained within it.
+#     - Logic: Essential for project initialization where a specific team 
+#       needs full access to a folder structure.
+#
+#  3. User Modification ('usermod'):
+#     - Command: sudo usermod -aG grupo_test $USER
+#     - Flags:
+#       * -a (append): Adds the user to the new group without removing 
+#         them from their current ones.
+#       * -G (groups): Specifies the target group(s).
+#     - Result: Grants the current user ($USER) the permissions of 'grupo_test'.
