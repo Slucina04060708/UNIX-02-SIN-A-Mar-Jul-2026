@@ -1,5 +1,4 @@
-#  The 'umask' command controls the default permissions assigned to 
-#  newly created files and directories by "masking" specific bits.
+#  The 'umask' command controls the default permissions assigned to newly created files and directories by "masking" specific bits.
 
 #  1. Logic Base:
 # - Directories: Started from base 777 (rwxrwxrwx).
@@ -26,7 +25,7 @@
 #  2. Commands to Restore Standard Permissions:
 # - sudo apt-get install acl : Installs the tool to manage ACLs.
 # - sudo chown -R $(whoami) . : Ensures you own the current workspace.
-# - sudo setfacl -bnR . : The "Magic" command.
+# - sudo setfacl -bnR . (This dot means actual directory. When it's .., it means parent directory) : The "Magic" command.
 # * -b : Removes all extended ACL entries.
 # * -n : Do not recalculate the mask.
 # * -R : Recursive (applies to all subfolders and files).
@@ -34,3 +33,23 @@
 #  3. Result:
 # - After running these, the '+' disappears and umask is strictly respected.
 
+In Linux, every file and directory is owned by a specific USER and 
+#  associated with a specific GROUP. 
+
+#  1. Command 'chown' (Change Owner):
+# - Purpose: Changes the owner and optionally the group of a file.
+# - Security Rule: Typically, only the 'root' user has the privilege to change the owner of any file.
+
+#  2. Command 'chgrp' (Change Group):
+# - Purpose: Changes the group associated with a file.
+# - Security Rule: A regular user can only change the group to one they belong to.
+#
+#  3. Recursive Action (-R):
+# - Both commands accept the '-R' flag to apply changes to a folder and all its contents simultaneously.
+#
+#  4. Practical Laboratory Cases:
+#Normal Creation: Files created by a user (e.g., 'root') 
+#automatically belong to that user and their primary group.
+# - Failed Operation: If a non-root user tries to 'chown' a file 
+#to another user (e.g., 'luna'), the system returns:
+# "chown: changing ownership of 'file': Operation not permitted"
