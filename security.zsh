@@ -48,8 +48,24 @@ In Linux, every file and directory is owned by a specific USER and
 # - Both commands accept the '-R' flag to apply changes to a folder and all its contents simultaneously.
 #
 #  4. Practical Laboratory Cases:
-#Normal Creation: Files created by a user (e.g., 'root') 
-#automatically belong to that user and their primary group.
-# - Failed Operation: If a non-root user tries to 'chown' a file 
-#to another user (e.g., 'luna'), the system returns:
+#Normal Creation: Files created by a user (e.g., 'root') automatically belong to that user and their primary group.
+# - Failed Operation: If a non-root user tries to 'chown' a file to another user (e.g., 'Pedro'), the system returns:
 # "chown: changing ownership of 'file': Operation not permitted"
+
+#Groups allow multiple users to share access to files and resources efficiently. A user can belong to multiple groups simultaneously.
+
+#  1. Command 'groups':
+# - Purpose: Lists the groups to which the current user belongs.
+# - Logic: By default, the output shows the primary group first, followed by any secondary groups.
+
+#  2. Command 'groupadd':
+# - Purpose: Creates a new group in the system.
+# - Requirement: Only the 'root' user (or using 'sudo') can create new groups.
+
+#  3. Practical Laboratory Sequence:
+# - Verification: 'groups' initially shows the user is in the 'root' group.
+# - Creation: 'groupadd grupo_test' adds a new entity to /etc/group.
+# - Confirmation: Running 'groups' again verifies the membership structure.
+
+#  4. Ownership Correlation:
+# - When a file is created (e.g., 'touch comun'), it is assigned to the primary group of the user who created it (e.g., 'alberto').
