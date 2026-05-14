@@ -224,3 +224,22 @@ In Linux, every file and directory is owned by a specific USER and
 #  3. Verification and Auditing:
 #     - id [user] : Best way to confirm both UID and GID after a change.
 #     - grep -E : Used to confirm the group no longer exists in /etc/group.
+
+#  Linux provides two primary tools to create groups, each with specific advantages for system organization.
+
+#  1. Command 'groupadd' (Low-level tool):
+#     - Purpose: Standard utility to add a group to the system.
+#     - Options:
+#       * -g [GID]: Assigns a specific numerical Group ID.
+#       * --system: Creates a system group (usually with a GID < 1000).
+#     - Example: sudo groupadd -g 2000 operaciones
+
+#  2. Command 'addgroup' (High-level tool):
+#     - Purpose: A friendlier wrapper (often found in Debian/Ubuntu/Kali) that simplifies group creation.
+#     - Options:
+#       * --gid: Assigns a specific GID.
+#       * --system: For service or system-level groups.
+#
+#  3. Verification & Auditing:
+#     - Command: grep "name" /etc/group
+#     - Logic: Allows you to verify the existence of a group and see its members without reading the entire database.
