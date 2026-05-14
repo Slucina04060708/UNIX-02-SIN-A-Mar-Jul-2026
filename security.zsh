@@ -243,3 +243,39 @@ In Linux, every file and directory is owned by a specific USER and
 #  3. Verification & Auditing:
 #     - Command: grep "name" /etc/group
 #     - Logic: Allows you to verify the existence of a group and see its members without reading the entire database.
+
+#  Removing groups is a common cleanup task, but it requires understanding how the system handles "orphaned" group IDs.
+
+#  1. Command 'groupdel':
+#     - Purpose: Removes a group definition from the system (/etc/group).
+#     - Logic: 
+#       * You cannot delete the primary group of an existing user.
+#       * The group must be empty of primary members before deletion.
+
+#  2. The "Orphaned GID" Phenomenon:
+#     - When a group is deleted, any file that belonged to it will no longer 
+#       show a group name in 'ls -l'.
+#     - Instead, the system will display the numerical GID (e.g., 2000).
+#     - Logic: The file still exists and keeps its permissions, but the link to the group name is broken.
+
+#  3. Security Implication:
+#     - If a new group is created later with the SAME numerical GID, it automatically inherits ownership of those "orphaned" files.
+
+#  Managing systems requires the ability to dynamically change user group memberships to grant access to specific projects or resources.
+#
+#  1. Command 'usermod' (Advanced Usage):
+#     - Purpose: Modifies a user account system account.
+#     - Critical Flags for Group Management:
+#       * -a (append): Adds the user to the new group without removing 
+#         them from their current ones.
+#       * -G (groups): Specifies the target group(s).
+#     - Example: sudo usermod -aG desarrolladores,diseño $USER
+#
+#  2. Command 'groups':
+#     - Purpose: Lists all groups to which the current user belongs.
+#     - Logic: Confirms the success of the 'usermod' command.
+#
+#  3. Key Sequence for Adding a User to a Group:
+#     - Identify target user and group.
+#     - Execute 'usermod -aG'.
+#     - Verify using 'groups' or 'id'.
