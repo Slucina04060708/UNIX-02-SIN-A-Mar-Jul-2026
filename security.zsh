@@ -113,3 +113,20 @@ In Linux, every file and directory is owned by a specific USER and
 #         them from their current ones.
 #       * -G (groups): Specifies the target group(s).
 #     - Result: Grants the current user ($USER) the permissions of 'grupo_test'.
+
+#  1. Command 'id':
+#     - Purpose: Displays the real and effective user and group IDs.
+#     - Logic: 
+#       * uid (User ID): The unique number for the current user.
+#       * gid (Group ID): The number of the user's primary group.
+#       * groups: A list of all secondary group IDs the user belongs to.
+#
+#  2. Command 'cat /etc/passwd':
+#     - Purpose: Reads the primary database file for all system accounts.
+#     - Structure: Each line represents a user with fields separated by ':'.
+#       (username:password_placeholder:UID:GID:comment:home_dir:shell)
+#
+#  3. Use of Pipes ('head -10'):
+#     - Purpose: Limits the output to the first 10 lines.
+#     - Logic: Prevents a wall of text in large systems, showing only 
+#       initial accounts (usually system/service accounts).
