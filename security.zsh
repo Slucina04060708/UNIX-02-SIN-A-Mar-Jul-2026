@@ -158,4 +158,69 @@ In Linux, every file and directory is owned by a specific USER and
 #     - Logic: Essential to identify which users have been added to the administrative group beyond the default root user.
 #
 #  3. Data Correlation:
-#     - If the output is "root:x:0:", it means the group name is root, its ID (GID) is 0, and no secondary users are explicitly listed.
+#     - If the output is "root:x:0:", it means the group name is root, its ID (GID) is 0, and no secondary users are explicitly listed. 
+
+#  The tilde symbol (~) is a universal alias for the current user's HOME directory (usually /root in your Kali environment or /home/username).
+
+#  1. Command 'mkdir ~/proyecto_unix/':
+#     - Purpose: Creates a new directory named 'proyecto_unix' inside 
+#       the user's home folder.
+#     - Logic: Using '~' ensures the directory is created in a space 
+#       where the user always has full permissions.
+
+#  2. Command 'ls -la ~/proyecto_unix/':
+#     - Purpose: Lists the contents of the newly created folder.
+#     - Flags:
+#       * -l (long): Displays detailed info (permissions, owner, size).
+#       * -a (all): Shows hidden files, including '.' (current dir) and '..' (parent dir).
+
+#  Managing user authentication is the cornerstone of system security. Linux provides tools to set, modify, and enforce password policies.
+
+#  1. Command 'passwd':
+#     - Purpose: Used to change a user account's password.
+#     - Logic:
+#       * If run by a regular user (passwd): It changes their own password after verifying the current one.
+#       * If run by 'root' (sudo passwd username): It allows the administrator to set a new password for ANY user without knowing the old one.
+#
+#  2. Account Locking and Unlocking:
+#     - The 'passwd' command can also manage account status (locking the encrypted password in /etc/shadow).
+#
+#  3. Key Identity Commands (Review):
+#     - chgrp : Command to change group ownership of a file.
+#     - groups : Command to list the groups a user belongs to.
+
+#  Beyond simple creation, group management involves assigning specific IDs and verifying their existence in the system database.
+
+#  1. Command 'groupadd' Options:
+#     - Default: Creates a group with the next available GID (usually >= 1000).
+#     - Flag -g [GID]: Forcefully assigns a specific Group ID. 
+#       * Example: sudo groupadd -g 2000 operaciones
+#     - Flag --system: Creates a system group.
+#       * Logic: System GIDs are reserved (usually < 1000) for services.
+
+#  2. Verification via /etc/group:
+#     - This file stores: group_name:password_placeholder:GID:user_list
+
+#  3. Advanced Auditing with 'grep':
+#     - Searching for multiple patterns:
+#       * grep "pattern1\|pattern2" : Uses escaped pipes for basic regex.
+#       * grep -E "pattern1|pattern2" : Uses Extended Regex (ERE) for cleaner syntax (no backslashes needed for the pipe).
+
+#  4. Help and Documentation:
+#     - groupadd --help : Quick reference for all available flags.
+
+#Proper lifecycle management for users and groups ensures that permissions remain updated as project roles change.
+
+#  1. Modifying User Groups ('usermod'):
+#     - Command: sudo usermod -g [group] [user]
+#     - Flag -g (initial group): Changes the user's primary group.
+#     - Logic: Use this only when a user's main departmental role changes.
+
+#  2. Deleting Groups ('groupdel'):
+#     - Command: sudo groupdel [group_name]
+#     - Purpose: Removes a group entry from /etc/group.
+#     - Constraint: A group cannot be removed if it is the primary group of an existing user.
+
+#  3. Verification and Auditing:
+#     - id [user] : Best way to confirm both UID and GID after a change.
+#     - grep -E : Used to confirm the group no longer exists in /etc/group.
