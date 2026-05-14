@@ -130,3 +130,19 @@ In Linux, every file and directory is owned by a specific USER and
 #     - Purpose: Limits the output to the first 10 lines.
 #     - Logic: Prevents a wall of text in large systems, showing only 
 #       initial accounts (usually system/service accounts).
+
+#  The 'id' command can be refined using flags to output only specific numeric identifiers, which is critical for scripting and automation.
+
+#  1. User Identification:
+#     - id -u : Returns ONLY the effective User ID (UID).
+#     - Logic: Essential to verify if a script is running as root (UID 0).
+#
+#  2. Group Identification:
+#     - id -g : Returns ONLY the primary Group ID (GID).
+#     - id -G : Returns ALL Group IDs (primary and supplementary).
+#     - Logic: Helps audit access levels across multiple project groups.
+#
+#  3. Key Identity Commands:
+#     - addgroup / groupadd : Tools for creating new group entities.
+#     - chgrp : Command to change the group ownership of a file.
+#     - newgrp : Allows a user to log in to a new group during a session.
