@@ -146,3 +146,16 @@ In Linux, every file and directory is owned by a specific USER and
 #     - addgroup / groupadd : Tools for creating new group entities.
 #     - chgrp : Command to change the group ownership of a file.
 #     - newgrp : Allows a user to log in to a new group during a session.
+
+#  The system stores all group definitions in the '/etc/group' file. Using filters allows for rapid auditing of specific memberships.
+#
+#  1. Command 'cat /etc/group':
+#     - Purpose: Reads the plain-text database of all system groups.
+#     - Format: group_name:password_placeholder:GID:user_list
+#
+#  2. Command 'grep root':
+#     - Purpose: Filters the input to show only lines containing 'root'.
+#     - Logic: Essential to identify which users have been added to the administrative group beyond the default root user.
+#
+#  3. Data Correlation:
+#     - If the output is "root:x:0:", it means the group name is root, its ID (GID) is 0, and no secondary users are explicitly listed.
