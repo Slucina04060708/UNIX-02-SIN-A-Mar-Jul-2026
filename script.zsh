@@ -38,3 +38,15 @@ ech0 "Grupo restaurado: $(id -gn)"
 
 #compare both files
 ls -la ~/antes_de_newgrp.txt ~/dentro_de_newgrp.txt
+
+#Create a group with password
+sudo groupadd grupo_resringido
+sudo gpasswd grupo_restringido
+#The system will ask for a password for the group
+
+# A user who does NOT belong to the group can join temporarily if they know the password
+newgrp restricted_group
+# The system will prompt for the group password
+# If the password is correct, they join temporarily
+id -gn
+exit # Upon exiting, they lose the temporary membership
