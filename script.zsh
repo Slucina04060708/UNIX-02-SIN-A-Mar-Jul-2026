@@ -28,3 +28,13 @@ ls -la ~/dentro_de_newgrp.txt
 #Create a directory
 mkdir -p ~/proyectos_dev/src
 ls =la ~/
+
+#proyecto_dev/ has 'desarrolladores' group
+#Exit the subshel of newgrp
+exit
+#Verify tha we come back to the originla group
+id -gn
+ech0 "Grupo restaurado: $(id -gn)"
+
+#compare both files
+ls -la ~/antes_de_newgrp.txt ~/dentro_de_newgrp.txt
