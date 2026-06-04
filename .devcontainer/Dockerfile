@@ -219,15 +219,26 @@ RUN git config --system --add safe.directory '*' \
 # definida para que la imagen sea usable también con Docker puro.
 # Cambiar shell de login de root a zsh dentro de la imagen,
 # para que chsh ya no haga falta y todo sea consistente.
-RUN chsh -s /usr/bin/zsh root
+RUN chsh -s /bin/bash root
 
 # Prompt institucional para los y las estudiantes del curso
-RUN cat >> /root/.zshrc <<'EOF'
+RUN cat >> /root/.bashrc <<'EOF'
 
 # ===== Valida si un comando fue ejecutado correctamente =====
-PROMPT='%F{cyan}[Santiago-Lucina]%f %F{yellow}%1~%f %(?.%F{green}✓.%F{red}✗ %?)%f %# '
+prompt_status() {
+    local EXIT_CODE=$?
+    if [ $EXIT_CODE -eq 0 ]; then
+        # Imprime el check en verde sin meter los escapes de longitud de Bash aquí
+        printf "\e[32m\]✔️\e[0m\]"
+    else
+        # Imprime la equis en rojo con su código de error
+        printf "\e[31m\]✘ $EXIT_CODE\e[0m\]"
+    fi
+}
+
+# Usamos de manera nativa los delimitadores \[ y \] rodeando la ejecución de la función
+export PS1="\[\$(prompt_status)\] \[\e[36m\][Santiago-Lucina]\[\e[0m\] \[\e[33m\]\w\[\e[0m\] \$ "
 EOF
 
-CMD ["/usr/bin/zsh"]
-
+CMD ["/bin/bash"]
 
