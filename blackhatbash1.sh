@@ -1,5 +1,9 @@
 #!/bin/bash
-
+echo ${SHELL}
+echo ${RANDOM}
+echo ${UID}
+echo ${OSTYPE}
+env
 #GNU bash, versión 5.3.9(1)-release (x86_64-pc-linux-gnu)
 #Copyright (C) 2025 Free Software Foundation, Inc.
 #Licencia GPLv3+: GPL de GNU versión 3 o posterior <http://gnu.org/licenses/gpl.html>
@@ -11,7 +15,7 @@
 #  that define system context, user identity, and runtime behaviors.
 
 #  1. Shell Path Location Context:
-#     - Command: echo ${SHELL}
+#       Command: echo ${SHELL}
 #     - Logic: Returns the absolute path of the default login shell binary 
 #       assigned to the current user descriptor (e.g., /usr/bin/zsh or /bin/bash).
 
