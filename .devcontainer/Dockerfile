@@ -39,6 +39,19 @@
 
 FROM kalilinux/kali-rolling:latest
 
+# ============================================================================
+# BLOCK b: Image, Layer, and Cache Architecture
+# ============================================================================
+# A Docker image is built as a stack of read-only layers, where each individual 
+# instruction translates into a single filesystem layer (BHB Ch. 3). According 
+# to Docker Documentation (Inc., 2024), Docker optimizes compilation using a 
+# build cache. However, if a change is detected in any instruction, that specific 
+# layer is invalidated. This triggers a cascade effect where all subsequent 
+# downstream layers are forced to rebuild from scratch, even if their contents 
+# did not change. To maximize performance and avoid rebuilding heavy dependencies 
+# repeatedly, we place stable commands like ENV or system configurations at 
+# the top and highly volatile elements toward the bottom.
+
 
 # ----------------------------------------------------------------------------
 # ENV: variables de entorno permanentes dentro del contenedor
