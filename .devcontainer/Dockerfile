@@ -105,6 +105,20 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # normales (no-root) deben poder capturar paquetes. Como en el contenedor
 # siempre somos root, respondemos "false" POR ADELANTADO usando
 # debconf-set-selections para que no detenga el build esperando input.
+
+# ============================================================================
+# BLOCK d: Automated Package Pre-Configuration (debconf)
+# ============================================================================
+# Certain network tools, like Wireshark and Tshark, launch interactive TUI 
+# prompts during installation to ask if non-root users should be allowed to 
+# capture packets. To maintain a completely unattended Docker build process 
+# as emphasized in laboratory automation (BHB Ch. 3), we use a pipe (|) operator 
+# to redirect standard output (stdout) from the echo command into the standard 
+# input (stdin) of debconf-set-selections (BHB Ch. 1). By setting this to 
+# "false", we restrict packet capturing privileges exclusively to the root 
+# user for internal system security, while successfully preventing apt-get 
+# from freezing the image compilation while waiting for manual user input.
+
 RUN echo "wireshark-common wireshark-common/install-setuid boolean false" \
     | debconf-set-selections
 
