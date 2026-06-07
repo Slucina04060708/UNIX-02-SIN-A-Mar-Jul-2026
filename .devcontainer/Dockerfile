@@ -274,6 +274,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  # apt deja archivos de caché que ya no necesitamos después de instalar.
  # Borrarlos aquí (en el mismo RUN) hace la capa final más pequeña.
  # Si los borráramos en otro RUN, seguirían ocupando en la capa anterior.
+
+ # ============================================================================
+# BLOCK g: Docker Layer Optimization and Cache Cleanup
+# ============================================================================
+# This final cleanup phase removes temporary package files to optimize the image size.
+# - 'apt-get clean' clears downloaded package installers (.deb) from the local cache.
+# - 'rm -rf /var/lib/apt/lists/*' recursively and forcefully deletes repository index lists.
+# - Why in the SAME RUN? According to Docker Documentation (Inc., 2024), since every RUN 
+#   instruction commits a permanent filesystem layer, these massive temporary files must 
+#   be purged within the exact same step before the layer is saved. Doing this later in a 
+#   separate RUN command would fail to reduce the image size, as the data would already 
+#   be baked into an intermediate layer (BHB Ch. 3).
+
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
