@@ -297,6 +297,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Por defecto Docker usa /bin/sh (un shell más limitado y antiguo). Lo
 # cambiamos a bash por si agregamos más instrucciones con sintaxis
 # moderna (arrays, [[ ]], etc.).
+
+# ============================================================================
+# BLOCK h: Explicit Shell Configuration (sh vs bash and the -c flag)
+# ============================================================================
+# By default, Docker executes subsequent RUN instructions using the minimal /bin/sh. 
+# Specifying SHELL ["/bin/bash", "-c"] forces the builder to use Bash instead. 
+# As detailed in Black Hat Bash (BHB Ch. 1), Bash introduces advanced syntax extensions 
+# and modern scripting features absent in standard POSIX sh. Furthermore, according to 
+# Ask Ubuntu documentation (Lan, 2020), the '-c' flag tells the shell to read and execute 
+# the trailing string as a command rather than launching an interactive prompt, which 
+# allows Docker to successfully pass complex multi-line automation blocks in the background.
+
 SHELL ["/bin/bash", "-c"]
 
 
