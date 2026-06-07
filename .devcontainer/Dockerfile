@@ -255,6 +255,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  # --- Después de instalar, activamos el idioma español ---
  # sed busca "# es_ES.UTF-8" en /etc/locale.gen y le quita el "#" para
  # activar esa línea. Luego locale-gen compila los archivos de idioma.
+
+# ============================================================================
+# BLOCK f: Localization Configuration (Spanish Locale Deployment)
+# ============================================================================
+# This step enables and generates the system-wide Spanish language locale support.
+# - 'sed -i' is utilized as an in-place stream editor (BHB Ch. 2) to search inside 
+#   the '/etc/locale.gen' file, substituting the commented line '# es_ES.UTF-8 UTF-8' 
+#   with its active equivalent 'es_ES.UTF-8 UTF-8'. This removes the '#' character.
+# - 'locale-gen' is subsequently triggered to compile and build the actual language 
+#   binary definitions from the newly updated configuration file, enabling full 
+#   UTF-8 character rendering and regional formatting inside the terminal.
+
  && sed -i 's/# es_ES.UTF-8/es_ES.UTF-8/' /etc/locale.gen \
  && locale-gen \
  \
