@@ -75,6 +75,23 @@ FROM kalilinux/kali-rolling:latest
 #
 # La barra invertida "\" al final de cada línea significa "esto continúa
 # en la línea siguiente". Solo es para legibilidad.
+
+# ============================================================================
+# BLOCK c: Environment Variables (ENV) Configuration
+# ============================================================================
+# The ENV instruction defines persistent environment variables available to the 
+# shell and all processes inside the container, as discussed in Black Hat Bash 
+# regarding system variables (BHB Ch. 1). 
+# - DEBIAN_FRONTEND=noninteractive: Forces the package manager (apt-get) to 
+#   install software completely unattended, suppressing interactive prompts or 
+#   dialogues that would freeze the background Docker build process.
+# - LANG & LC_ALL=es_ES.UTF-8: Sets the system localization to Spanish and 
+#   configures UTF-8 character encoding, ensuring text streams (stdout/stderr) 
+#   properly render special characters, accents, and symbols.
+# - TERM=xterm-256color: Informs the terminal emulator to support a 256-color 
+#   palette, which is essential for proper syntax highlighting in text editors 
+#   and interactive command-line utilities.
+
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=es_ES.UTF-8 \
     LC_ALL=es_ES.UTF-8 \
