@@ -122,7 +122,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
 RUN echo "wireshark-common wireshark-common/install-setuid boolean false" \
     | debconf-set-selections
 
-
 # ----------------------------------------------------------------------------
 # RUN: ejecutar comandos durante la construcción de la imagen
 # ----------------------------------------------------------------------------
@@ -141,6 +140,33 @@ RUN echo "wireshark-common wireshark-common/install-setuid boolean false" \
 # El "&&" encadena comandos: ejecuta el siguiente SOLO SI el anterior
 # terminó bien. Si algo falla, el build se detiene con error (que es lo
 # que queremos: mejor un error claro que una imagen rota).
+
+# ============================================================================
+# BLOCK e: Package Installation and Core Toolset
+# ============================================================================
+# This RUN instruction updates package lists and installs the core utilities.
+# - 'apt-get update' synchronizes repository indexes, while 'install' deploys software.
+# - The '-y' flag automates inputs by assuming 'yes' to space/install confirmation prompts.
+# - '--no-install-recommends' skips optional packages, keeping the final layer lightweight.
+# - Optimization: Bundling these tasks into ONE big RUN command prevents temporary installation 
+#   cache data from being permanently saved in separate filesystem layers (Docker Cache).
+# - Logic: The '&&' control operator chains commands execution only if the previous step 
+#   succeeds with an exit code of 0, and trailing backslashes (\) escape newlines (BHB Ch. 1).
+#
+# Core Tools Functionality Overview:
+# - build-essential, curl, wget, git, git-lfs, unzip: Foundational development tools 
+#   used to fetch, decompress, and build source repositories (BHB Ch. 3).
+# - gawk, sed, grep: Text processing and stream utilities used to filter and manipulate 
+#   unstructured terminal outputs and files (BHB Ch. 2).
+# - jq: A command-line JSON processor. According to Oracle (Erickson, 2024), JSON is a 
+#   key-value text format widely used for data exchange. Since traditional text filters struggle 
+#   with nested data structures, jq acts as a specialized stream filter to cleanly parse JSON APIs.
+# - shellcheck: A static analysis utility that checks Bash script flows for syntax errors.
+# - nmap, tcpdump, tshark: Crucial security scanning and packet sniffing utilities used 
+#   to analyze network traffic within the virtual lab infrastructure (BHB Ch. 3).
+# - tor, proxychains4: Anonymity tools used to route hacking traffic through secure proxy chains.
+# - man-db, manpages-es: Core manuals database required to read UNIX system documentation pages.
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
     \
     # === Editores de texto y shells (intérpretes de comandos) ===
