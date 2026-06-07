@@ -23,6 +23,20 @@
 # En lugar de partir de cero, partimos de la imagen oficial de Kali Linux
 # en su versión "rolling" (actualización continua, siempre al día).
 # Todo lo que instalemos más abajo se apila ENCIMA de esta base.
+
+# ============================================================================
+# BLOCK a: Base Image Definition
+# ============================================================================
+# A base image is the foundational layer of a Dockerfile specified by the FROM 
+# instruction, serving as the starting point to build a containerized environment 
+# (GeeksforGeeks, 2026). In this course, we utilize "kalilinux/kali-rolling" 
+# because it is a lightweight, Debian-based Linux distribution specialized for 
+# cybersecurity, penetration testing, and ethical hacking (Arsys, n.d.). 
+# Deploying Kali inside a Docker container provides a highly optimized and 
+# secure lab environment to execute pentesting tools without altering our 
+# host operating system, aligning with the lab infrastructure setup concepts 
+# discussed in Black Hat Bash.
+
 FROM kalilinux/kali-rolling:latest
 
 
