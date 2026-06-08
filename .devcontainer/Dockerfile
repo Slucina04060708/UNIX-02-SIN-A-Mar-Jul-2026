@@ -424,4 +424,26 @@ EOF
 
 CMD ["/usr/bin/zsh"]
 
-
+# =============================================================================
+# REFERENCES
+# =============================================================================
+# Arsys. (n.d.). ¿Qué es Kali Linux y para qué se utiliza? Arsys Blog. 
+#   https://www.arsys.es/blog/que-es-kali-linux-y-para-que-se-utiliza
+#
+# Erickson, J. (2024, April 4). What is JSON? Oracle América Latina. 
+#   https://www.oracle.com/latam/database/what-is-json/
+#
+# Farhi, D., & Aleks, N. (2025). Black Hat Bash: Creative Scripting for Hackers 
+#   and Pentesters (1st ed.). No Starch Press.
+#
+# GeeksforGeeks. (2026, April 8). What is Docker Image. GeeksforGeeks. 
+#   https://www.geeksforgeeks.org/devops/what-is-docker-image/
+#
+# Inc., D. (2024, September 3). Docker build cache. Docker Documentation. 
+#   https://docs.docker.com/build/cache/
+#
+# Inc., D. (2026, May 13). Dockerfile reference. Docker Documentation. 
+#   https://docs.docker.com/reference/dockerfile/
+#
+# Lan. (2020, March 28). What is the sh -c command? Ask Ubuntu. 
+#   https://askubuntu.com/questions/831847/what-is-the-sh-c-command
