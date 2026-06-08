@@ -341,6 +341,23 @@ WORKDIR /workspaces
 # - pull.rebase false: merge por defecto al hacer pull (más intuitivo)
 # - git lfs install --system: registra los hooks de LFS globalmente para
 #   que, si un repo los necesita, funcionen sin sorpresas.
+
+# ============================================================================
+# BLOCK j: System-Wide Git and Git LFS Configurations
+# ============================================================================
+# This instruction configures Git settings globally at the system level (--system) 
+# so they apply to all users inside the container, preventing permission or versioning errors.
+# - safe.directory '*': Disables strict ownership checks on repository paths. This is vital 
+#   for Docker environments (BHB Ch. 3) where the local workspace files might be mounted 
+#   with a different User ID (UID) than the internal root user.
+# - init.defaultBranch main: Standardizes the default primary branch name as 'main' for any 
+#   newly initialized repositories, suppressing historical legacy warnings.
+# - pull.rebase false: Sets the traditional 'merge' as the default strategy when performing 
+#   a 'git pull' operation, providing an intuitive workflow for project synchronization.
+# - git lfs install --system: Deploys Git Large File Storage hooks system-wide, allowing the 
+#   environment to seamlessly track and pull massive binary files or datasets if required by 
+#   subsequent technical laboratory exercises.
+
 RUN git config --system --add safe.directory '*' \
  && git config --system init.defaultBranch main \
  && git config --system pull.rebase false \
