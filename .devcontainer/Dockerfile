@@ -371,6 +371,19 @@ RUN git config --system --add safe.directory '*' \
 # definida para que la imagen sea usable también con Docker puro.
 # Cambiar shell de login de root a zsh dentro de la imagen,
 # para que chsh ya no haga falta y todo sea consistente.
+
+# ============================================================================
+# BLOCK k: User Interactive Default Shell Modification (chsh)
+# ============================================================================
+# The chsh (Change Shell) command modifies the default login shell for a user profile 
+# by updating its operational record inside the local system files.
+# - Parameters: The '-s' flag specifies the absolute path of the new shell binary 
+#   (/usr/bin/zsh), and 'root' targets the superuser profile.
+# - Rationale: While Bash is kept as the background builder shell for layers (BHB Ch. 1), 
+#   switching the root user's interactive login shell to Zsh aligns the environment 
+#   with modern Kali Linux defaults, providing students with advanced tab-completion, 
+#   syntax colorization, and command correction during active laboratory sessions.
+
 RUN chsh -s /usr/bin/zsh root
 
 # Prompt institucional para los y las estudiantes del curso
