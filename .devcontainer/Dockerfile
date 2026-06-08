@@ -407,6 +407,21 @@ RUN cat >> /root/.zshrc <<'EOF'
 PROMPT='%F{cyan}[Santiago-Lucina]%f %F{yellow}%1~%f %(?.%F{green}✓.%F{red}✗ %?)%f %# '
 EOF
 
+# ============================================================================
+# BLOCK m: Default Runtime Command Definition (CMD vs RUN)
+# ============================================================================
+# The CMD instruction specifies the default executable process that initiates 
+# automatically when the container transitions into an active state at startup.
+# - CMD vs RUN: 'RUN' statements execute exclusively during image construction 
+#   (build time) to modify the filesystem permanently by creating layers (BHB Ch. 3). 
+#   On the othe hand, 'CMD' does not run during compilation; it sets the default runtime 
+#   command executed when the container starts up.
+# - Rationale: Specifying ["/usr/bin/zsh"] ensures that an interactive Zsh shell 
+#   spawns immediately upon container launch, keeping the environment active and 
+#   responsive. While cloud environments like GitHub Codespaces might override this 
+#   with their integrated VS Code terminal hooks, defining CMD guarantees standard 
+#   Docker CLI users are greeted by our customized shell interface straight away.
+
 CMD ["/usr/bin/zsh"]
 
 
