@@ -387,6 +387,20 @@ RUN git config --system --add safe.directory '*' \
 RUN chsh -s /usr/bin/zsh root
 
 # Prompt institucional para los y las estudiantes del curso
+
+# ============================================================================
+# BLOCK l: Here-Document (Heredoc) and Interactive Prompt Customization
+# ============================================================================
+# This step appends custom system configurations into the interactive Zsh profile.
+# - Here-Document (Heredoc): Marked by '<<'EOF'', it is an advanced stream redirection 
+#   mechanism (BHB Ch. 1) that passes a multi-line literal block of text into 'cat'. 
+#   The '>>' operator appends this block directly onto '/root/.zshrc' without overwriting it.
+# - PROMPT Configuration: As explored in shell customizations (BHB Ch. 2), this line redefines 
+#   the user's visual terminal interface line. It explicitly displays the student's name 
+#   in cyan, the current folder name in yellow, and integrates an evaluation string based 
+#   on Linux Exit Codes (BHB Ch. 1); if the last command succeeded, it prints a green checkmark (✓), 
+#   but if it failed, it outputs a red cross (✗) along with the specific error code for debugging.
+
 RUN cat >> /root/.zshrc <<'EOF'
 
 # ===== Valida si un comando fue ejecutado correctamente =====
