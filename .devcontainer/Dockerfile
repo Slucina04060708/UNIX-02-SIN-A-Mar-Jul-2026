@@ -318,6 +318,20 @@ SHELL ["/bin/bash", "-c"]
 # Codespaces siempre monta el código del repositorio en
 # /workspaces/<nombre-del-repo>. Establecer /workspaces aquí hace que las
 # terminales se abran cerca de nuestros archivos del curso.
+
+# ============================================================================
+# BLOCK i: Default Working Directory Configuration (WORKDIR)
+# ============================================================================
+# The WORKDIR instruction sets the default absolute path where all subsequent 
+# instructions (such as RUN, CMD, or ENTRYPOINT) will be executed inside the container.
+# - Mechanics: It acts as the automated filesystem equivalent of the UNIX 'cd' command 
+#   and updates the system's active '$PWD' environment variable (BHB Ch. 1).
+# - According to Docker Documentation (Inc., 2026): If the specified directory does 
+#   not exist, Docker will automatically create it. Setting this to '/workspaces' 
+#   ensures that interactive cloud shells (like GitHub Codespaces or Devcontainers) 
+#   automatically mount and open your repository files inside an organized, predictable 
+#   location upon container startup (BHB Ch. 3).
+
 WORKDIR /workspaces
 
 # Configuración de Git para el contenedor:
