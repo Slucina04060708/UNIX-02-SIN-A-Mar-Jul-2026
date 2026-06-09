@@ -12,3 +12,11 @@ for args in "$@"; do
 echo "${args}"
 done
 # The above loop iterates through each argument passed to the script and prints it on a new line. The "$@" variable is used to access all the arguments as an array, allowing us to process each one individually.
+
+# Takes input from the user and assigns it to variables
+echo "What is your first name?"
+read -r firstname # The read command reads a line of input from the user and assigns it to the variable specified (in this case, firstname). The -r option prevents backslashes from being interpreted as escape characters, allowing for more accurate input handling.
+echo "What is your last name?"
+read -r lastname # Similar to the previous read command, this line prompts the user for their last name and assigns it to the variable lastname. The -r option is used again to ensure that any special characters in the input are treated as literal characters rather than escape sequences.
+echo "Your first name is ${firstname} and your last name is
+${lastname}"
