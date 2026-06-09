@@ -4,3 +4,7 @@ ls -l > /dev/null
 echo "The exit code of the ls command was: $?"
 lzl 2> /dev/null
 echo "The exit code of the non-existing lzl command was: $?"
+
+ls
+(exit 223)
+echo "Existing with code: $?."
