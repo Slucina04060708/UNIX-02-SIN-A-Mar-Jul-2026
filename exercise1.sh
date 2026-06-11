@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 # 1. Accept two arguments and assign them to variables
 FIRST_NAME=$1
