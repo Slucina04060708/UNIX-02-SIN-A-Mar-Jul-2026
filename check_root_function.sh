@@ -15,3 +15,7 @@ else
     echo "You are not root!" # If the function returns 1 (failure), print that the user is not root
 fi
 
+#useradd Luna - This command adds a new user named Luna to the system. The useradd command is used to create a new user account in Unix-like operating systems. By default, it creates a new user with a home directory and assigns a unique user ID (UID) to the new user.
+#u - Luna - This command switches the current user to Luna. The su command stands for "substitute user" and is used to switch to another user account. The - (dash) option is used to start a login shell, which means that the environment will be set up as if Luna had logged in directly.
+#bash check_root_function - This command executes the check_root_function script using the bash shell. Since we switched to the Luna user, this command will check if Luna is root or not. In this case the message is "You are not root!" 
+
