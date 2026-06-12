@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for file in example_file*; do # Start a for loop that iterates over all files in the current directory that match the pattern "example_file*". The * is a wildcard that matches any characters, so this loop will process all files that start with "example_file".
+if [[ "${file}" == "example_file1" ]]; then # Check if the current file being processed is named "example_file1". The [[ ]] syntax is used for conditional expressions in bash, and the == operator checks for string equality. If the condition is true, the code block inside the if statement will be executed.
+echo "Skipping the first file" # Print a message indicating that the first file is being skipped. This message will be displayed when the loop encounters the file named "example_file1".
+continue # The continue statement is used to skip the rest of the code inside the loop for the current iteration and move on to the next iteration. In this case, when the loop encounters "example_file1", it will skip any further processing for that file and continue with the next file in the list.
+fi # End of the if statement that checks for "example_file1". If the current file is not "example_file1", the code block below will be executed.
+echo "${RANDOM}" > "${file}" # If the current file is not "example_file1", this line will execute. It generates a random number using the ${RANDOM} variable and writes it to the current file being processed. The > operator is used to redirect the output of the echo command to the file, overwriting its contents with the new random number.
+done # End of the for loop. Once all files that match the pattern "example_file*" have been processed, the loop will exit and the script will continue to any code that follows (if there is any).
