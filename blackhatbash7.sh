@@ -19,3 +19,8 @@ William,Smith,New York
 EOF
 
 awk -F',' '{print $1}' registro.csv # Show only the first column from a CSV file
+head log.txt # Show the first 10 lines of the log file
+awk 'NR < 10' log.txt # Show the first 10 lines of the log file using awk
+grep "42.236.10.117" log.txt # Show lines containing the IP address
+awk '{print $7}' log.txt # Show only the seventh column
+grep "42.236.10.117" log.txt | awk '{print $7}' # Show the seventh column for lines containing the IP address
