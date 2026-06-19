@@ -36,3 +36,8 @@ sed '$d' newlog.txt # Remove the last line from the new log file
 sed -i '$d' newlog.txt # Remove the last line from the new log file (in-place)
 sed 's/ //g' newlog.txt > newlog1.txt # Remove all spaces from the log file and save it to a new file
 sed '8,10d' newlog1.txt # Remove lines 8 to 10 from the log file
+sed -n '10,15 p' log.txt # Show lines 10 to 15 from the log file
+sleep 300 & # Run the sleep command in the background for 300 seconds
+jobs # Show the list of background jobs
+fg %1 # Bring the first background job to the foreground
+bg %1 # Resume the first background job in the background
