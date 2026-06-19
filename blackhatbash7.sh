@@ -24,3 +24,8 @@ awk 'NR < 10' log.txt # Show the first 10 lines of the log file using awk
 grep "42.236.10.117" log.txt # Show lines containing the IP address
 awk '{print $7}' log.txt # Show only the seventh column
 grep "42.236.10.117" log.txt | awk '{print $7}' # Show the seventh column for lines containing the IP address
+sed 's/Mozilla/Godzilla/g' log.txt # Replace all occurrences of "Mozilla" with "Godzilla" in the log file
+grep "Mozilla" log.txt # Show lines containing "Mozilla" in the log file
+grep "Godzilla" log.txt # This will not return any results since "Gozilla" is a typo
+sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
+grep "Godzilla" newlog.txt # Show lines containing "Godzilla" in the new log file
