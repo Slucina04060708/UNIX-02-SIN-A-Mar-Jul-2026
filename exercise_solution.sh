@@ -29,7 +29,4 @@ else # If the ping is not successful (the domain is not reachable), the script w
 
 fi
 
-chmod +x exercise_solution.sh # Make the script executable by adding execute permissions to it.
-nohup ./exercise_solution.sh mysite nostarch.com & # Run the script in the background using nohup, which allows it to continue running even if the terminal is closed. The script is executed with two arguments: "mysite" and "nostarch.com". The output of the script will be written to the results.csv file.
-ps -ef | grep exercise_solution.sh # Check if the script is running by listing all processes and filtering for the script's name. This will show the process ID and other details of the running script.
-ps aux | grep exercise_solution.sh # Another way to check if the script is running, showing all processes with detailed information and filtering for the script's name.
+sleep 300 # Pause the script for 300 seconds (5 minutes) before it finishes. This allows the script to run for a while, which can be useful for testing background execution and monitoring.

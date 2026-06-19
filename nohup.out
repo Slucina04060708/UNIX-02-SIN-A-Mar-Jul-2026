@@ -434,3 +434,645 @@ root       32635  0.0  0.0   7380  3812 ?        S    17:39   0:00 /bin/bash ./e
 root       32687  0.0  0.0   7380  3792 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
 root       32714  0.0  0.0   7380  3820 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
 root       32719  0.0  0.0   6684  2356 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32687       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32714       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32802   32687  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32804   32687  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32687  0.0  0.0   7380  3796 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32714  0.0  0.0   7380  3820 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32802  0.0  0.0   7380  3752 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32807  0.0  0.0   6684  2368 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32714       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32802       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32830   32714  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32832   32714  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32714  0.0  0.0   7380  3824 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32802  0.0  0.0   7380  3752 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32830  0.0  0.0   7380  3864 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32835  0.0  0.0   6684  2364 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32802       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32830       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32878   32802  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32880   32802  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32802  0.0  0.0   7380  3756 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32830  0.0  0.0   7380  3864 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32878  0.0  0.0   7380  3728 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32883  0.0  0.0   6684  2420 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32830       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32878       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32905   32830  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32907   32830  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32830  0.0  0.0   7380  3868 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32878  0.0  0.0   7380  3728 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32905  0.0  0.0   7380  3868 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32910  0.0  0.0   6684  2432 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32878       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32905       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32960   32878  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32962   32878  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32878  0.0  0.0   7380  3732 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32905  0.0  0.0   7380  3868 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32960  0.0  0.0   7380  3724 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32965  0.0  0.0   6684  2424 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32905       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32960       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32987   32905  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32989   32905  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32905  0.0  0.0   7380  3872 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32960  0.0  0.0   7380  3724 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32987  0.0  0.0   7380  3800 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32992  0.0  0.0   6684  2336 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32960       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32987       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33036   32960  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33038   32960  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32960  0.0  0.0   7380  3728 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       32987  0.0  0.0   7380  3800 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33036  0.0  0.0   7380  3768 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33041  0.0  0.0   6684  2364 ?        S    17:39   0:00 grep exercise_solution.sh
+root       32987       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33036       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33069   32987  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33071   32987  0 17:39 ?        00:00:00 grep exercise_solution.sh
+root       32987  0.0  0.0   7380  3804 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33036  0.0  0.0   7380  3768 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33069  0.0  0.0   7380  3712 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33074  0.0  0.0   6684  2496 ?        S    17:39   0:00 grep exercise_solution.sh
+root       33036       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33069       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33118   33036  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33120   33036  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33036  0.0  0.0   7380  3772 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33069  0.0  0.0   7380  3712 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33118  0.0  0.0   7380  3720 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33123  0.0  0.0   6684  2396 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33069       1  0 17:39 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33118       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33151   33069  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33153   33069  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33069  0.0  0.0   7380  3716 ?        S    17:39   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33118  0.0  0.0   7380  3720 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33151  0.0  0.0   7380  3828 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33156  0.0  0.0   6684  2380 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33118       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33151       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33221   33118  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33223   33118  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33118  0.0  0.0   7380  3724 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33151  0.0  0.0   7380  3828 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33221  0.0  0.0   7380  3612 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33226  0.0  0.0   6684  2372 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33151       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33221       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33248   33151  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33250   33151  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33151  0.0  0.0   7380  3832 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33221  0.0  0.0   7380  3612 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33248  0.0  0.0   7380  3796 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33253  0.0  0.0   6684  2360 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33221       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33248       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33303   33221  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33305   33221  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33221  0.0  0.0   7380  3616 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33248  0.0  0.0   7380  3796 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33303  0.0  0.0   7380  3796 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33308  0.0  0.0   6684  2392 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33248       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33303       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33330   33248  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33332   33248  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33248  0.0  0.0   7380  3800 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33303  0.0  0.0   7380  3796 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33330  0.0  0.0   7380  3868 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33335  0.0  0.0   6684  2372 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33303       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33330       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33373   33303  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33375   33303  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33303  0.0  0.0   7380  3800 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33330  0.0  0.0   7380  3868 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33373  0.0  0.0   7380  3784 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33384  0.0  0.0   6684  2496 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33330       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33373       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33406   33330  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33408   33330  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33330  0.0  0.0   7380  3872 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33373  0.0  0.0   7380  3784 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33406  0.0  0.0   7380  3768 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33411  0.0  0.0   6684  2364 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33373       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33406       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33455   33373  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33457   33373  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33373  0.0  0.0   7380  3788 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33406  0.0  0.0   7380  3768 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33455  0.0  0.0   7380  3756 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33460  0.0  0.0   6684  2372 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33406       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33455       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33488   33406  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33490   33406  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33406  0.0  0.0   7380  3772 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33455  0.0  0.0   7380  3756 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33488  0.0  0.0   7380  3780 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33493  0.0  0.0   6684  2492 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33455       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33488       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33531   33455  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33533   33455  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33455  0.0  0.0   7380  3760 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33488  0.0  0.0   7380  3780 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33531  0.0  0.0   7380  3768 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33536  0.0  0.0   6684  2368 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33488       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33531       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33570   33488  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33572   33488  0 17:40 ?        00:00:00 grep exercise_solution.sh
+root       33488  0.0  0.0   7380  3784 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33531  0.0  0.0   7380  3768 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33570  0.0  0.0   7380  3712 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33575  0.0  0.0   6684  2368 ?        S    17:40   0:00 grep exercise_solution.sh
+root       33531       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33570       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33613   33531  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33615   33531  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33531  0.0  0.0   7380  3772 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33570  0.0  0.0   7380  3712 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33613  0.0  0.0   7380  3700 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33618  0.0  0.0   6684  2360 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33570       1  0 17:40 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33613       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33652   33570  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33654   33570  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33570  0.0  0.0   7380  3716 ?        S    17:40   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33613  0.0  0.0   7380  3700 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33652  0.0  0.0   7380  3704 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33657  0.0  0.0   6684  2492 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33613       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33652       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33695   33613  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33697   33613  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33613  0.0  0.0   7380  3704 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33652  0.0  0.0   7380  3704 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33695  0.0  0.0   7380  3816 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33700  0.0  0.0   6684  2336 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33652       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33695       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33728   33652  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33730   33652  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33652  0.0  0.0   7380  3708 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33695  0.0  0.0   7380  3816 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33728  0.0  0.0   7380  3868 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33733  0.0  0.0   6684  2432 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33695       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33728       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33777   33695  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33779   33695  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33695  0.0  0.0   7380  3820 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33728  0.0  0.0   7380  3868 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33777  0.0  0.0   7380  3748 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33782  0.0  0.0   6684  2428 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33728       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33777       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33810   33728  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33812   33728  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33728  0.0  0.0   7380  3872 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33777  0.0  0.0   7380  3748 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33810  0.0  0.0   7380  3776 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33815  0.0  0.0   6684  2372 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33777       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33810       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33853   33777  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33855   33777  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33777  0.0  0.0   7380  3752 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33810  0.0  0.0   7380  3776 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33853  0.0  0.0   7380  3732 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33858  0.0  0.0   6684  2368 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33810       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33853       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33886   33810  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33889   33810  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33810  0.0  0.0   7380  3780 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33853  0.0  0.0   7380  3732 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33886  0.0  0.0   7380  3672 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33891  0.0  0.0   6684  2420 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33853       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33886       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33938   33853  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33940   33853  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33853  0.0  0.0   7380  3736 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33886  0.0  0.0   7380  3672 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33938  0.0  0.0   7380  3760 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33943  0.0  0.0   6684  2364 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33886       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33938       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33977   33886  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33979   33886  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33886  0.0  0.0   7380  3676 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33938  0.0  0.0   7380  3760 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33977  0.0  0.0   7380  3780 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33982  0.0  0.0   6684  2368 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33938       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33977       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34021   33938  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34023   33938  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33938  0.0  0.0   7380  3764 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       33977  0.0  0.0   7380  3780 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34021  0.0  0.0   7380  3784 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34026  0.0  0.0   6684  2352 ?        S    17:41   0:00 grep exercise_solution.sh
+root       33977       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34021       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34060   33977  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34062   33977  0 17:41 ?        00:00:00 grep exercise_solution.sh
+root       33977  0.0  0.0   7380  3784 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34021  0.0  0.0   7380  3784 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34060  0.0  0.0   7380  3748 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34065  0.0  0.0   6684  2364 ?        S    17:41   0:00 grep exercise_solution.sh
+root       34021       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34060       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34103   34021  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34105   34021  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34021  0.0  0.0   7380  3788 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34060  0.0  0.0   7380  3748 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34103  0.0  0.0   7380  3648 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34108  0.0  0.0   6684  2364 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34060       1  0 17:41 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34103       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34142   34060  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34144   34060  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34060  0.0  0.0   7380  3752 ?        S    17:41   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34103  0.0  0.0   7380  3648 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34142  0.0  0.0   7380  3772 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34147  0.0  0.0   6684  2368 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34103       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34142       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34185   34103  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34187   34103  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34103  0.0  0.0   7380  3652 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34142  0.0  0.0   7380  3772 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34185  0.0  0.0   7380  3796 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34190  0.0  0.0   6684  2348 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34142       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34185       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34218   34142  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34220   34142  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34142  0.0  0.0   7380  3776 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34185  0.0  0.0   7380  3796 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34218  0.0  0.0   7380  3680 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34223  0.0  0.0   6684  2368 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34185       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34218       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34267   34185  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34269   34185  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34185  0.0  0.0   7380  3800 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34218  0.0  0.0   7380  3680 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34267  0.0  0.0   7380  3820 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34272  0.0  0.0   6684  2420 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34218       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34267       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34298   34218  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34300   34218  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34218  0.0  0.0   7380  3684 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34267  0.0  0.0   7380  3820 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34298  0.0  0.0   7380  3708 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34303  0.0  0.0   6684  2376 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34267       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34298       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34343   34267  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34345   34267  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34267  0.0  0.0   7380  3824 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34298  0.0  0.0   7380  3708 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34343  0.0  0.0   7380  3816 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34348  0.0  0.0   6684  2368 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34298       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34343       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34376   34298  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34378   34298  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34298  0.0  0.0   7380  3712 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34343  0.0  0.0   7380  3816 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34376  0.0  0.0   7380  3740 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34381  0.0  0.0   6684  2432 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34343       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34376       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34419   34343  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34421   34343  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34343  0.0  0.0   7380  3820 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34376  0.0  0.0   7380  3740 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34419  0.0  0.0   7380  3832 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34424  0.0  0.0   6684  2372 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34376       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34419       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34458   34376  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34460   34376  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34376  0.0  0.0   7380  3744 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34419  0.0  0.0   7380  3832 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34458  0.0  0.0   7380  3688 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34463  0.0  0.0   6684  2352 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34419       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34458       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34501   34419  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34503   34419  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34419  0.0  0.0   7380  3836 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34458  0.0  0.0   7380  3688 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34501  0.0  0.0   7380  3740 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34506  0.0  0.0   6684  2420 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34458       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34501       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34540   34458  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34542   34458  0 17:42 ?        00:00:00 grep exercise_solution.sh
+root       34458  0.0  0.0   7380  3692 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34501  0.0  0.0   7380  3740 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34540  0.0  0.0   7380  3832 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34545  0.0  0.0   6684  2376 ?        S    17:42   0:00 grep exercise_solution.sh
+root       34501       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34540       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34581   34501  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34583   34501  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34501  0.0  0.0   7380  3744 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34540  0.0  0.0   7380  3832 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34581  0.0  0.0   7380  3700 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34586  0.0  0.0   6684  2432 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34540       1  0 17:42 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34581       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34616   34540  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34618   34540  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34540  0.0  0.0   7380  3836 ?        S    17:42   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34581  0.0  0.0   7380  3700 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34616  0.0  0.0   7380  3648 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34621  0.0  0.0   6684  2368 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34581       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34616       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34655   34581  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34657   34581  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34581  0.0  0.0   7380  3704 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34616  0.0  0.0   7380  3648 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34655  0.0  0.0   7380  3748 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34659  0.0  0.0   6684  2364 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34616       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34655       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34684   34616  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34686   34616  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34616  0.0  0.0   7380  3652 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34655  0.0  0.0   7380  3748 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34684  0.0  0.0   7380  3816 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34689  0.0  0.0   6684  2520 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34655       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34684       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34728   34655  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34730   34655  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34655  0.0  0.0   7380  3752 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34684  0.0  0.0   7380  3816 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34728  0.0  0.0   7380  3596 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34733  0.0  0.0   6684  2436 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34684       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34728       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34755   34684  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34757   34684  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34684  0.0  0.0   7380  3820 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34728  0.0  0.0   7380  3596 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34755  0.0  0.0   7380  3816 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34760  0.0  0.0   6684  2368 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34728       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34755       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34806   34728  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34808   34728  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34728  0.0  0.0   7380  3600 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34755  0.0  0.0   7380  3816 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34806  0.0  0.0   7380  3796 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34811  0.0  0.0   6684  2364 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34755       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34806       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34839   34755  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34841   34755  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34755  0.0  0.0   7380  3820 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34806  0.0  0.0   7380  3796 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34839  0.0  0.0   7380  3844 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34844  0.0  0.0   6684  2432 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34806       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34839       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34886   34806  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34888   34806  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34806  0.0  0.0   7380  3800 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34839  0.0  0.0   7380  3844 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34886  0.0  0.0   7380  3888 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34891  0.0  0.0   6684  2432 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34839       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34886       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34924   34839  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34926   34839  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34839  0.0  0.0   7380  3848 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34886  0.0  0.0   7380  3888 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34924  0.0  0.0   7380  3708 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34929  0.0  0.0   6684  2420 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34886       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34924       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34975   34886  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34977   34886  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34886  0.0  0.0   7380  3892 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34924  0.0  0.0   7380  3708 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34975  0.0  0.0   7380  3592 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34980  0.0  0.0   6684  2376 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34924       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34975       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35010   34924  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35012   34924  0 17:43 ?        00:00:00 grep exercise_solution.sh
+root       34924  0.0  0.0   7380  3712 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       34975  0.0  0.0   7380  3592 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35010  0.0  0.0   7380  3740 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35015  0.0  0.0   6684  2372 ?        S    17:43   0:00 grep exercise_solution.sh
+root       34975       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35010       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35057   34975  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35059   34975  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       34975  0.0  0.0   7380  3596 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35010  0.0  0.0   7380  3740 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35057  0.0  0.0   7380  3792 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35062  0.0  0.0   6684  2364 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35010       1  0 17:43 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35057       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35086   35010  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35088   35010  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35010  0.0  0.0   7380  3744 ?        S    17:43   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35057  0.0  0.0   7380  3792 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35086  0.0  0.0   7380  3816 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35091  0.0  0.0   6684  2368 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35057       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35086       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35139   35057  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35141   35057  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35057  0.0  0.0   7380  3796 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35086  0.0  0.0   7380  3816 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35139  0.0  0.0   7380  3592 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35144  0.0  0.0   6684  2396 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35086       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35139       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35168   35086  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35170   35086  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35086  0.0  0.0   7380  3820 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35139  0.0  0.0   7380  3592 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35168  0.0  0.0   7380  3772 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35173  0.0  0.0   6684  2352 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35139       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35168       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35218   35139  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35220   35139  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35139  0.0  0.0   7380  3596 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35168  0.0  0.0   7380  3772 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35218  0.0  0.0   7380  3772 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35223  0.0  0.0   6684  2416 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35168       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35218       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35247   35168  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35249   35168  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35168  0.0  0.0   7380  3776 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35218  0.0  0.0   7380  3772 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35247  0.0  0.0   7380  3728 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35252  0.0  0.0   6684  2372 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35218       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35247       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35298   35218  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35300   35218  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35218  0.0  0.0   7380  3776 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35247  0.0  0.0   7380  3728 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35298  0.0  0.0   7380  3776 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35303  0.0  0.0   6684  2364 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35247       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35298       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35329   35247  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35331   35247  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35247  0.0  0.0   7380  3732 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35298  0.0  0.0   7380  3776 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35329  0.0  0.0   7380  3840 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35334  0.0  0.0   6684  2352 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35298       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35329       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35376   35298  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35378   35298  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35298  0.0  0.0   7380  3780 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35329  0.0  0.0   7380  3840 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35376  0.0  0.0   7380  3776 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35381  0.0  0.0   6684  2372 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35329       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35376       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35411   35329  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35413   35329  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35329  0.0  0.0   7380  3844 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35376  0.0  0.0   7380  3776 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35411  0.0  0.0   7380  3720 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35416  0.0  0.0   6684  2492 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35376       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35411       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35458   35376  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35460   35376  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35376  0.0  0.0   7380  3780 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35411  0.0  0.0   7380  3720 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35458  0.0  0.0   7380  3704 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35463  0.0  0.0   6684  2364 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35411       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35458       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35492   35411  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35494   35411  0 17:44 ?        00:00:00 grep exercise_solution.sh
+root       35411  0.0  0.0   7380  3724 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35458  0.0  0.0   7380  3704 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35492  0.0  0.0   7380  3736 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35497  0.0  0.0   6684  2364 ?        S    17:44   0:00 grep exercise_solution.sh
+root       35458       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35492       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35540   35458  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35542   35458  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35458  0.0  0.0   7380  3708 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35492  0.0  0.0   7380  3736 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35540  0.0  0.0   7380  3604 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35545  0.0  0.0   6684  2368 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35492       1  0 17:44 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35540       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35569   35492  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35571   35492  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35492  0.0  0.0   7380  3740 ?        S    17:44   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35540  0.0  0.0   7380  3604 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35569  0.0  0.0   7380  3816 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35574  0.0  0.0   6684  2492 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35540       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35569       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35623   35540  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35625   35540  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35540  0.0  0.0   7380  3608 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35569  0.0  0.0   7380  3816 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35623  0.0  0.0   7380  3712 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35628  0.0  0.0   6684  2368 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35569       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35623       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35646   35569  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35648   35569  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35569  0.0  0.0   7380  3820 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35623  0.0  0.0   7380  3712 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35646  0.0  0.0   7380  3808 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35651  0.0  0.0   6684  2360 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35623       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35646       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35700   35623  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35702   35623  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35623  0.0  0.0   7380  3716 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35646  0.0  0.0   7380  3808 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35700  0.0  0.0   7380  3740 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35705  0.0  0.0   6684  2424 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35646       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35700       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35729   35646  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35731   35646  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35646  0.0  0.0   7380  3812 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35700  0.0  0.0   7380  3740 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35729  0.0  0.0   7380  3800 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35734  0.0  0.0   6684  2364 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35700       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35729       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35772   35700  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35774   35700  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35700  0.0  0.0   7380  3744 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35729  0.0  0.0   7380  3800 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35772  0.0  0.0   7380  3724 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35777  0.0  0.0   6684  2516 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35729       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35772       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35811   35729  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35813   35729  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35729  0.0  0.0   7380  3804 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35772  0.0  0.0   7380  3724 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35811  0.0  0.0   7380  3872 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35816  0.0  0.0   6684  2436 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35772       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35811       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35853   35772  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35855   35772  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35772  0.0  0.0   7380  3728 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35811  0.0  0.0   7380  3872 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35853  0.0  0.0   7380  3844 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35858  0.0  0.0   6552  2060 ?        R    17:45   0:00 grep exercise_solution.sh
+root       35811       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35853       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35894   35811  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35896   35811  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35811  0.0  0.0   7380  3876 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35853  0.0  0.0   7380  3844 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35894  0.0  0.0   7380  3712 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35899  0.0  0.0   6684  2360 ?        S    17:45   0:00 grep exercise_solution.sh
+root       35853       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35894       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35937   35853  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35939   35853  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35853  0.0  0.0   7380  3848 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35894  0.0  0.0   7380  3712 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35937  0.0  0.0   7380  3664 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35942  0.0  0.0   6684  2352 ?        S    17:45   0:00 grep exercise_solution.sh
+sleep: falta un operando
+Pruebe 'sleep --help' para más información.
+root       35894       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35937       1  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35992   35894  0 17:45 ?        00:00:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35994   35894  0 17:45 ?        00:00:00 grep exercise_solution.sh
+root       35894  0.0  0.0   7380  3716 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35937  0.0  0.0   7380  3664 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35992  0.0  0.0   7380  3800 ?        S    17:45   0:00 /bin/bash ./exercise_solution.sh mysite nostarch.com
+root       35997  0.0  0.0   6684  2372 ?        S    17:45   0:00 grep exercise_solution.sh

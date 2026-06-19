@@ -41,3 +41,7 @@ sleep 300 & # Run the sleep command in the background for 300 seconds
 jobs # Show the list of background jobs
 fg %1 # Bring the first background job to the foreground
 bg %1 # Resume the first background job in the background
+chmod +x exercise_solution.sh # Make the script executable by adding execute permissions to it.
+nohup ./exercise_solution.sh mysite nostarch.com & # Run the script in the background using nohup, which allows it to continue running even if the terminal is closed. The script is executed with two arguments: "mysite" and "nostarch.com". The output of the script will be written to the results.csv file.
+ps -ef | grep exercise_solution.sh # Check if the script is running by listing all processes and filtering for the script's name. This will show the process ID and other details of the running script.
+ps aux | grep exercise_solution.sh # Another way to check if the script is running, showing all processes with detailed information and filtering for the script's name.
