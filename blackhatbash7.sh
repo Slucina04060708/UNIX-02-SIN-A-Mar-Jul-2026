@@ -29,3 +29,10 @@ grep "Mozilla" log.txt # Show lines containing "Mozilla" in the log file
 grep "Godzilla" log.txt # This will not return any results since "Gozilla" is a typo
 sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
 grep "Godzilla" newlog.txt # Show lines containing "Godzilla" in the new log file
+git diff newlog.txt log.txt # Show the differences between the new log file and the original log file
+sed '1d' newlog.txt # Remove the first line from the new log file
+sed -i '1d' newlog.txt # Remove the first line from the new log file (in-place)
+sed '$d' newlog.txt # Remove the last line from the new log file
+sed -i '$d' newlog.txt # Remove the last line from the new log file (in-place)
+sed 's/ //g' newlog.txt > newlog1.txt # Remove all spaces from the log file and save it to a new file
+sed '8,10d' newlog1.txt # Remove lines 8 to 10 from the log file
